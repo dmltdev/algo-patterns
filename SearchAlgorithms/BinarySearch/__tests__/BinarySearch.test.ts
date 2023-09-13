@@ -21,6 +21,7 @@ describe("Binary Search", () => {
 
   it("Negative Values", () => {
     expect(binarySearch([-100, -50, -1], -100)).toBe(0);
+    expect(binarySearch([-100, -50, -1], -50)).toBe(1);
     expect(binarySearch([-100, -50, -1], -1)).toBe(2);
   });
 });

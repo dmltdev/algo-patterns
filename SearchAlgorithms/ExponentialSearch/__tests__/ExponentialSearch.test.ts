@@ -1,18 +1,28 @@
-import ExponentialSearch from "../ExponentialSearch";
+import exponentialSearch from "../ExponentialSearch";
 
 //Array with numbers 1-100
 const arr = Array.from(Array(100+1).keys()).slice(1); //?
 
 describe("Exponential Search", () => {
-  it("Should return the index of the key when it exists in the array", () => {
-    expect(ExponentialSearch(arr, 2)).toBe(1);
+  it("Element found", () => {
+    expect(exponentialSearch(arr, 1)).toBe(0);
+    expect(exponentialSearch(arr, 50)).toBe(49);
+    expect(exponentialSearch(arr, 100)).toBe(99);
   })
 
-  it("Should return -1 if the key does not exist in the array", () => {
-    expect(ExponentialSearch(arr, -100)).toBe(-1);
+  it("Element not found", () => {
+    expect(exponentialSearch(arr, -100)).toBe(-1);
+    expect(exponentialSearch(arr, -50)).toBe(-1);
+    expect(exponentialSearch(arr, -1)).toBe(-1);
   })
 
-  it("Should handle the edge case when the key is at the begining of the array", () => {
-    expect(ExponentialSearch(arr, 1)).toBe(0);
+  it("Empty Array", () => {
+    expect(exponentialSearch([], 10)).toBe(-1);
+  })
+
+  it("Negative Values", () => {
+    expect(exponentialSearch([-100, -50, -1], -100)).toBe(0);
+    expect(exponentialSearch([-100, -50, -1], -50)).toBe(1);
+    expect(exponentialSearch([-100, -50, -1], -1)).toBe(2);
   })
 });
