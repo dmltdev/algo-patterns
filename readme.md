@@ -15,3 +15,5 @@ Performance is benchmarked with Benchmark.JS
 
 * Search Algorithms
 * Sorting Algorithms
+
+### Data Structures
