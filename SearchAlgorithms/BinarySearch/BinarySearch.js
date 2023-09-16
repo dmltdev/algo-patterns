@@ -1,11 +1,9 @@
-"use strict";
 // the function expects a sorted array.
-Object.defineProperty(exports, "__esModule", { value: true });
-function BinarySearch(sortedArray, key) {
-    var start = 0;
-    var end = sortedArray.length - 1;
+export default function BinarySearch(sortedArray, key) {
+    let start = 0;
+    let end = sortedArray.length - 1;
     while (start <= end) {
-        var middle = Math.floor((start + end) / 2);
+        let middle = Math.floor((start + end) / 2);
         if (sortedArray[middle] === key) {
             return middle; // Found the key
         }
@@ -18,4 +16,3 @@ function BinarySearch(sortedArray, key) {
     }
     return -1; // Key was not found
 }
-exports.default = BinarySearch;
