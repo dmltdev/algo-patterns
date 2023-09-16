@@ -7,7 +7,9 @@
     "esModuleInterop": true,
     "module": "ESNext",
     "sourceMap": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
   "exclude": ["node_modules", "**/__tests__", "**/*.test.ts"]
 }
