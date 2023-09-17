@@ -1,4 +1,4 @@
-import twoCrystallBalls from "../../__solutions__/TwoCrystalBalls";
+import twoCrystallBalls from "../../__solutions__/TwoCrystalBalls"
 
 describe("Two Crystall Balls Problem", () => {
   it("should return -1 when there are no breaks", () => {
