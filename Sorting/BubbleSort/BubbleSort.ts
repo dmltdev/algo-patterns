@@ -1,5 +1,6 @@
 /* 
-Running time is O(n^2). 
+Time complexity: O(N^2)
+Space complexity: O(1)
 
 The calculated Big O is ((n*(n+1)/2) => (n^2 + n) / 2 => n^2 + n > n^2.
 
