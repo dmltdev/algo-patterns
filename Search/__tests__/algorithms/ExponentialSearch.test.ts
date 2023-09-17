@@ -1,4 +1,4 @@
-import exponentialSearch from "../ExponentialSearch";
+import exponentialSearch from "../../ExponentialSearch/ExponentialSearch";
 
 //Array with numbers 1-100
 const arr = Array.from(Array(100+1).keys()).slice(1); //?

@@ -1,4 +1,4 @@
-import binarySearch from "../BinarySearch";
+import binarySearch from "../../BinarySearch/BinarySearch";
 
 //Array with numbers 1-100
 const arr = Array.from(Array(100 + 1).keys()).slice(1); //?
