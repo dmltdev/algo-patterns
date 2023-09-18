@@ -1,20 +1,39 @@
 /* 
-Time complexity: O(N^2)
-Space complexity: O(1)
 
-The calculated Big O is ((n*(n+1)/2) => (n^2 + n) / 2 => n^2 + n > n^2.
+Bubble Sort 
 
-Since constants are dropped (n becomes insignificant in that formula
-because n^2 will be way higher than just n, and will eventually get closer to 0%), the result is O(n^2)
+*Pseudocode:
+bubbleSort(array)
+  for i <- 1 to indexOfLastUnsortedElement-1
+    if leftElement > rightElement
+      swap leftElement and rightElement
+end bubbleSort
+
+*Time complexity: O(N^2)
+— best: O(n); | If the array is already sorted, then there is no need for sorting.
+— worst: O(n^2); | If we want to sort in ascending order and the array is in descending order then the worst case occurs.
+— average: O(n^2); | It occurs when the elements of the array are in jumbled order (neither ascending nor descending).
+
+*Space complexity is O(1) because an extra variable is used for swapping.
+
+*Bubble sort is used if
+— complexity does not matter
+— short and simple code is preferred
+
+!In the optimized bubble sort algorithm, two extra variables may be used: flag "swapped" (becomes true if elements are swapped) and var "temp" (to hold the temp value of arr[i]). Hence, the space complexity will be O(2).
+!But we can use a destructuring assignment to get rid of the extra variable "temp".
+
 */
 
 export default function bubbleSort(arr: number[]): number[] {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
-      if (arr[j] > arr[j + 1]) {
-        let temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
+  let swapped = true;
+
+  while (swapped) {
+    swapped = false;
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+        swapped = true;
       }
     }
   }

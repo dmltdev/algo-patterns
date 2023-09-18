@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1694964232142" clover="3.2.0">
-  <project timestamp="1694964232143" name="All files">
-    <metrics statements="56" coveredstatements="56" conditionals="22" coveredconditionals="21" methods="6" coveredmethods="6" elements="84" coveredelements="83" complexity="0" loc="56" ncloc="56" packages="5" files="5" classes="5"/>
+<coverage generated="1695016519802" clover="3.2.0">
+  <project timestamp="1695016519802" name="All files">
+    <metrics statements="67" coveredstatements="67" conditionals="26" coveredconditionals="25" methods="7" coveredmethods="7" elements="100" coveredelements="99" complexity="0" loc="67" ncloc="67" packages="6" files="6" classes="6"/>
     <package name="Search.BinarySearch">
       <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="BinarySearch.ts" path="/home/dmlt/Repos/algorithms-data-structures/Search/BinarySearch/BinarySearch.ts">
@@ -74,18 +74,35 @@
       </file>
     </package>
     <package name="Sorting.BubbleSort">
-      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="BubbleSort.ts" path="/home/dmlt/Repos/algorithms-data-structures/Sorting/BubbleSort/BubbleSort.ts">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="200" type="stmt"/>
-        <line num="14" count="20000" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="4905" type="stmt"/>
-        <line num="16" count="4905" type="stmt"/>
-        <line num="17" count="4905" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="32" count="185" type="stmt"/>
+        <line num="33" count="185" type="stmt"/>
+        <line num="34" count="18216" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5107" type="stmt"/>
+        <line num="36" count="5107" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Sorting.SelectionSort">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="SelectionSort.ts" path="/home/dmlt/Repos/algorithms-data-structures/Sorting/SelectionSort/SelectionSort.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="19" count="1" type="stmt"/>
         <line num="21" count="3" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="22" count="200" type="stmt"/>
+        <line num="23" count="200" type="stmt"/>
+        <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="624" type="stmt"/>
+        <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="186" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
       </file>
     </package>
   </project>
