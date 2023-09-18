@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695016519802" clover="3.2.0">
-  <project timestamp="1695016519802" name="All files">
-    <metrics statements="67" coveredstatements="67" conditionals="26" coveredconditionals="25" methods="7" coveredmethods="7" elements="100" coveredelements="99" complexity="0" loc="67" ncloc="67" packages="6" files="6" classes="6"/>
+<coverage generated="1695017312544" clover="3.2.0">
+  <project timestamp="1695017312544" name="All files">
+    <metrics statements="77" coveredstatements="77" conditionals="28" coveredconditionals="27" methods="8" coveredmethods="8" elements="113" coveredelements="112" complexity="0" loc="77" ncloc="77" packages="7" files="7" classes="7"/>
     <package name="Search.BinarySearch">
       <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="BinarySearch.ts" path="/home/dmlt/Repos/algorithms-data-structures/Search/BinarySearch/BinarySearch.ts">
@@ -80,13 +80,29 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="185" type="stmt"/>
-        <line num="33" count="185" type="stmt"/>
-        <line num="34" count="18216" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="5107" type="stmt"/>
-        <line num="36" count="5107" type="stmt"/>
+        <line num="32" count="181" type="stmt"/>
+        <line num="33" count="181" type="stmt"/>
+        <line num="34" count="17820" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="4617" type="stmt"/>
+        <line num="36" count="4617" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Sorting.InsertionSort">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="InsertionSort.ts" path="/home/dmlt/Repos/algorithms-data-structures/Sorting/InsertionSort/InsertionSort.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="198" type="stmt"/>
+        <line num="9" count="198" type="stmt"/>
+        <line num="10" count="198" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4757" type="stmt"/>
+        <line num="12" count="4757" type="stmt"/>
+        <line num="14" count="198" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Sorting.SelectionSort">
@@ -98,9 +114,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="624" type="stmt"/>
+        <line num="25" count="642" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="186" type="stmt"/>
+        <line num="29" count="191" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>

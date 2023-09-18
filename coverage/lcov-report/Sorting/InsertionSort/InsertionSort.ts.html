@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Sorting/BubbleSort/BubbleSort.ts</title>
+    <title>Code coverage report for Sorting/InsertionSort/InsertionSort.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">Sorting/BubbleSort</a> BubbleSort.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">Sorting/InsertionSort</a> InsertionSort.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -82,109 +82,40 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a>
-<a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">181x</span>
-<span class="cline-any cline-yes">181x</span>
-<span class="cline-any cline-yes">17820x</span>
-<span class="cline-any cline-yes">4617x</span>
-<span class="cline-any cline-yes">4617x</span>
+<span class="cline-any cline-yes">198x</span>
+<span class="cline-any cline-yes">198x</span>
+<span class="cline-any cline-yes">198x</span>
+<span class="cline-any cline-yes">4757x</span>
+<span class="cline-any cline-yes">4757x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">198x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* 
-&nbsp;
-Bubble Sort 
-&nbsp;
-*Pseudocode:
-bubbleSort(array)
-  for i &lt;- 1 to indexOfLastUnsortedElement-1
-    if leftElement &gt; rightElement
-      swap leftElement and rightElement
-end bubbleSort
-&nbsp;
-*Time complexity: O(N^2)
-— best: O(n); | If the array is already sorted, then there is no need for sorting.
-— worst: O(n^2); | If we want to sort in ascending order and the array is in descending order then the worst case occurs.
-— average: O(n^2); | It occurs when the elements of the array are in jumbled order (neither ascending nor descending).
-&nbsp;
-*Space complexity is O(1) because an extra variable is used for swapping.
-&nbsp;
-*Bubble sort is used if
-— complexity does not matter
-— short and simple code is preferred
-&nbsp;
-!In the optimized bubble sort algorithm, two extra variables may be used: flag "swapped" (becomes true if elements are swapped) and var "temp" (to hold the temp value of arr[i]). Hence, the space complexity will be O(2).
-!But we can use a destructuring assignment to get rid of the extra variable "temp".
 &nbsp;
 */
 &nbsp;
-export default function bubbleSort(arr: number[]): number[] {
-  let swapped = true;
+export default function insertionSort(arr: number[]): number[] {
+  for (let step = 1; step &lt; arr.length; step++) {
+    const key = arr[step];
+    let j = step - 1;
 &nbsp;
-  while (swapped) {
-    swapped = false;
-    for (let i = 0; i &lt; arr.length - 1; i++) {
-      if (arr[i] &gt; arr[i + 1]) {
-        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
-        swapped = true;
-      }
+    while (j &gt;= 0 &amp;&amp; key &lt; arr[j]) {
+      arr[j + 1] = arr[j];
+      j = j - 1;
     }
+&nbsp;
+    arr[j + 1] = key;
   }
 &nbsp;
   return arr;
