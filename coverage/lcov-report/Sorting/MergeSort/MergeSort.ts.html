@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Sorting/InsertionSort/InsertionSort.ts</title>
+    <title>Code coverage report for Sorting/MergeSort/MergeSort.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">Sorting/InsertionSort</a> InsertionSort.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">Sorting/MergeSort</a> MergeSort.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -105,8 +105,14 @@
 <a name='L40'></a><a href='#L40'>40</a>
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -134,62 +140,77 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">198x</span>
 <span class="cline-any cline-yes">198x</span>
-<span class="cline-any cline-yes">198x</span>
-<span class="cline-any cline-yes">5344x</span>
-<span class="cline-any cline-yes">5344x</span>
+<span class="cline-any cline-yes">1087x</span>
+<span class="cline-any cline-yes">531x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">556x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">198x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">399x</span>
+<span class="cline-any cline-yes">201x</span>
+<span class="cline-any cline-yes">198x</span>
+<span class="cline-any cline-yes">198x</span>
+<span class="cline-any cline-yes">198x</span>
+<span class="cline-any cline-yes">198x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* 
-Insertion Sort 
+Merge Sort is one of the most popular sorting algorithms
+that is based on the principle of Divide and Conquer Algorithm.
+It is an out-of-place, stable, and comparison-type sorting algorithm.
+&nbsp;
+Here, a problem is divided into multiple sub-problems. 
+Each sub-problem is solved individually. 
+Finally, sub-problems are combined to form the final solution.
 &nbsp;
 *Pseudocode
-insertionSort(array)
-  mark first element as sorted
-  for each unsorted element X
-    'extract' the element X
-    for j &lt;- lastSortedIndex down to 0
-      if current element j &gt; X
-        move sorted element to the right by 1
-    break loop and insert X here
-end insertionSort
+MergeSort(A, p, r):
+    if p &gt; r 
+        return
+    q = (p+r)/2
+    mergeSort(A, p, q)
+    mergeSort(A, q+1, r)
+    merge(A, p, q, r)
 &nbsp;
-*Time Complexity
-- worst case: O(n^2) | Suppose, an array is in ascending order, and you want to sort it in descending order. In this case, worst case complexity occurs.
-- average case: O(n^2) | It occurs when the elements of an array are in jumbled order (neither ascending nor descending).
-- best case: O(n) | When the array is already sorted, the outer loop runs for n number of times whereas the inner loop does not run at all. So, there are only n number of comparisons. Thus, complexity is linear.
+*Time Complexity:
+- worst: O(n * log n);
+- average: O(n * log n);
+- best: O(n * log n);
 &nbsp;
-*Space Complexity is O(1) because an extra variable key is used.
-&nbsp;
-*Insertion Sort is used when
-- the array has a small number of elements;
-- there are only a few elements left to be sorted;
-&nbsp;
+*Space complexity of merge sort is O(n).
 */
 &nbsp;
-export default function insertionSort(arr: number[]): number[] {
-  for (let step = 1; step &lt; arr.length; step++) {
-    const key = arr[step];
-    let j = step - 1;
+function merge(left: number[], right: number[]): number[] {
+  let sortedArr: number[] = [];
 &nbsp;
-    while (j &gt;= 0 &amp;&amp; key &lt; arr[j]) {
-      arr[j + 1] = arr[j];
-      j = j - 1;
+  while (left.length &amp;&amp; right.length) {
+    if (left[0] &lt; right[0]) {
+      sortedArr.push(left.shift() as number);
+    } else {
+      sortedArr.push(right.shift() as number);
     }
-&nbsp;
-    arr[j + 1] = key;
   }
 &nbsp;
-  return arr;
+  return [...sortedArr, ...left, ...right];
 }
-&nbsp;</pre></td></tr></table></pre>
+&nbsp;
+export default function mergeSort(arr: number[]): number[] {
+  if (arr.length &lt;= 1) return arr;
+&nbsp;
+  let mid = Math.floor(arr.length / 2);
+&nbsp;
+  let left = mergeSort(arr.slice(0, mid));
+  let right = mergeSort(arr.slice(mid));
+&nbsp;
+  return merge(left, right);
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
