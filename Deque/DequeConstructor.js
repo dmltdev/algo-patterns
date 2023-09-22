@@ -1,3 +1,5 @@
+// TODO reimplement in TS + create tests
+
 class Node {
   constructor(value) {
     this.value = value;
