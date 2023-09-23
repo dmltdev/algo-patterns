@@ -1,4 +1,12 @@
-// TODO: Add description and tests!
+/* 
+Boyer Moore majority vote algorithm
+
+The Boyer-Moore voting method is one of the most often used optimum algorithms 
+for determining the majority element among elements with more than N/2 occurrences.
+
+Time complexity: O(n);
+Space complexity: O(1);
+*/
 
 export default function boyerMooreVoting(nums: number[]): number {
   let candidate = nums[0];
@@ -13,6 +21,9 @@ export default function boyerMooreVoting(nums: number[]): number {
     } else {
       count--;
     }
+
+    //! For debugging
+    // console.log(`Candidate: ${candidate}, Count: ${count}`);
   }
 
   return candidate;

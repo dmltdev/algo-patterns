@@ -11,7 +11,7 @@ export default function BinarySearch(
     let middle = Math.floor((start + end) / 2);    
 
     if (sortedArray[middle] === key) {
-      return middle; // Found the key
+      return middle;
     } else if (sortedArray[middle] < key) {
       start = middle + 1;
     } else if (sortedArray[middle] > key) {
@@ -19,5 +19,5 @@ export default function BinarySearch(
     }
   }
 
-  return -1; // Key was not found
+  return -1;
 }
