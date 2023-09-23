@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695451998023" clover="3.2.0">
-  <project timestamp="1695451998023" name="All files">
-    <metrics statements="122" coveredstatements="122" conditionals="42" coveredconditionals="41" methods="15" coveredmethods="15" elements="179" coveredelements="178" complexity="0" loc="122" ncloc="122" packages="10" files="10" classes="10"/>
+<coverage generated="1695455534921" clover="3.2.0">
+  <project timestamp="1695455534922" name="All files">
+    <metrics statements="121" coveredstatements="121" conditionals="40" coveredconditionals="40" methods="15" coveredmethods="15" elements="176" coveredelements="176" complexity="0" loc="121" ncloc="121" packages="10" files="10" classes="10"/>
     <package name="BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BoyerMooreVoting.ts" path="/home/dmlt/repositories/algorithms-data-structures/BoyerMooreVotingAlgorithm/BoyerMooreVoting.ts">
@@ -46,9 +46,9 @@
       </file>
     </package>
     <package name="Search.BinarySearch">
-      <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BinarySearch.ts" path="/home/dmlt/repositories/algorithms-data-structures/Search/BinarySearch/BinarySearch.ts">
-        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="21" type="stmt"/>
         <line num="6" count="21" type="stmt"/>
@@ -58,7 +58,6 @@
         <line num="10" count="13" type="stmt"/>
         <line num="12" count="49" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="29" type="stmt"/>
-        <line num="15" count="20" type="cond" truecount="1" falsecount="1"/>
         <line num="16" count="20" type="stmt"/>
         <line num="19" count="8" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
@@ -123,11 +122,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="173" type="stmt"/>
-        <line num="33" count="173" type="stmt"/>
-        <line num="34" count="17028" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="4893" type="stmt"/>
-        <line num="36" count="4893" type="stmt"/>
+        <line num="32" count="182" type="stmt"/>
+        <line num="33" count="182" type="stmt"/>
+        <line num="34" count="17919" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="4705" type="stmt"/>
+        <line num="36" count="4705" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -141,8 +140,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="5125" type="stmt"/>
-        <line num="35" count="5125" type="stmt"/>
+        <line num="34" count="5008" type="stmt"/>
+        <line num="35" count="5008" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -155,9 +154,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1077" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="519" type="stmt"/>
-        <line num="35" count="558" type="stmt"/>
+        <line num="31" count="1089" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="516" type="stmt"/>
+        <line num="35" count="573" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -177,9 +176,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="629" type="stmt"/>
+        <line num="25" count="640" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="191" type="stmt"/>
+        <line num="29" count="188" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>

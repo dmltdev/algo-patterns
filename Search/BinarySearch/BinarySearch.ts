@@ -8,15 +8,15 @@ export default function BinarySearch(
   let end = sortedArray.length - 1;
 
   while (start <= end) {
-    let middle = Math.floor((start + end) / 2);    
+    let middle = Math.floor((start + end) / 2);
 
     if (sortedArray[middle] === key) {
       return middle;
     } else if (sortedArray[middle] < key) {
       start = middle + 1;
-    } else if (sortedArray[middle] > key) {
+    } else {
       end = middle - 1;
-    }
+    } 
   }
 
   return -1;
