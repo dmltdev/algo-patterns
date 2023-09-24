@@ -54,7 +54,8 @@ stack.push(5);
 
 console.log(stack.printStack());
 
-// Performs Postfix Evaluation on a given exp
+// TODO: Move postfix evaluation somewhere else
+//* Performs Postfix Evaluation on a given expression
 function postFixEvaluation(exp) {
   let stack = new Stack();
   for (let i = 0; i < exp.length; i++) {
@@ -93,4 +94,4 @@ function postFixEvaluation(exp) {
 console.log(postFixEvaluation("235*+8-"));
 
 // returns postfix evaluation can't be performed
-// console.log(postFixEvaluation("23*+"));
+console.log(postFixEvaluation("23*+"));
