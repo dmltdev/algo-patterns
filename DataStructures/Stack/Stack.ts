@@ -1,27 +1,46 @@
-/* 
+/*
+ */
+type Node<T> = {
+  value: T;
+  prev?: Node<T>;
+};
 
-*/
+export default class Stack<T> {
+  public length: number;
+  private head: Node<T> | undefined;
 
-class Stack {
   constructor() {
-    this.items = [];
+    this.head = undefined;
+    this.length = 0;
   }
-  push(element) {
-    this.items.push(element);
+  push(item: T): void {
+    const node = { value: item } as Node<T>;
+    this.length++;
+    if (!this.head) {
+      this.head = node;
+      return;
+    }
+
+    node.prev = this.head;
+    this.head = node;
   }
-  pop() {
-    if (this.items.length == 0) return "Underflow";
-    return this.items.pop();
+
+  pop(): T | undefined {
+    if (!this.head) {
+      return undefined;
+    }
+    const poppedValue = this.head.value;
+    this.head = this.head.prev;
+    this.length--;
+
+    return poppedValue;
   }
+
   peek() {
-    return this.items[this.items.length - 1];
+    return this.head?.value;
   }
+
   isEmpty() {
-    return this.items.length == 0;
-  }
-  printStack() {
-    let str = "";
-    for (let i = 0; i < this.items.length; i++) str += this.items[i] + " ";
-    return str;
+    return this.length === 0;
   }
 }
