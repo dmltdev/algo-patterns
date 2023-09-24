@@ -35,12 +35,18 @@ describe("Stack", () => {
 
     stack.push(2);
     expect(stack.length).toBe(2);
-  })
+  });
 
   it("isEmpty returns a correct boolean value", () => {
     expect(stack.isEmpty()).toBe(true);
 
     stack.push(1);
     expect(stack.isEmpty()).toBe(false);
-  })
+  });
+
+  it("Should handle pop when the stack is empty", () => {
+    const poppedValue = stack.pop();
+    expect(poppedValue).toBe(undefined);
+    expect(stack.length).toBe(0);
+  });
 });

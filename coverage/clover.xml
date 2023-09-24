@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695552295182" clover="3.2.0">
-  <project timestamp="1695552295182" name="All files">
-    <metrics statements="144" coveredstatements="143" conditionals="46" coveredconditionals="45" methods="22" coveredmethods="22" elements="212" coveredelements="210" complexity="0" loc="144" ncloc="144" packages="11" files="11" classes="11"/>
+<coverage generated="1695569162295" clover="3.2.0">
+  <project timestamp="1695569162295" name="All files">
+    <metrics statements="144" coveredstatements="144" conditionals="46" coveredconditionals="46" methods="22" coveredmethods="22" elements="212" coveredelements="212" complexity="0" loc="144" ncloc="144" packages="11" files="11" classes="11"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BoyerMooreVoting.ts" path="/home/dmlt/repositories/dev-compendium/Algorithms/BoyerMooreVotingAlgorithm/BoyerMooreVoting.ts">
@@ -97,11 +97,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="191" type="stmt"/>
-        <line num="33" count="191" type="stmt"/>
-        <line num="34" count="18810" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="4942" type="stmt"/>
-        <line num="36" count="4942" type="stmt"/>
+        <line num="32" count="176" type="stmt"/>
+        <line num="33" count="176" type="stmt"/>
+        <line num="34" count="17325" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5269" type="stmt"/>
+        <line num="36" count="5269" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -115,8 +115,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4538" type="stmt"/>
-        <line num="35" count="4538" type="stmt"/>
+        <line num="34" count="4817" type="stmt"/>
+        <line num="35" count="4817" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -129,9 +129,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1080" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="529" type="stmt"/>
-        <line num="35" count="551" type="stmt"/>
+        <line num="31" count="1090" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="541" type="stmt"/>
+        <line num="35" count="549" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -151,9 +151,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="601" type="stmt"/>
+        <line num="25" count="591" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="189" type="stmt"/>
+        <line num="29" count="190" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>
@@ -188,12 +188,12 @@
       </file>
     </package>
     <package name="DataStructures.Stack">
-      <metrics statements="19" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
+      <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
       <file name="Stack.ts" path="/home/dmlt/repositories/dev-compendium/DataStructures/Stack/Stack.ts">
-        <metrics statements="19" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
+        <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
         <line num="11" count="6" type="stmt"/>
         <line num="12" count="6" type="stmt"/>
         <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
@@ -201,8 +201,8 @@
         <line num="15" count="3" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
-        <line num="21" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
