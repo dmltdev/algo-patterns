@@ -22,14 +22,17 @@ export default class LinkedList {
   }
 
   push(value: number): ListNode {
+    // TODO: Once a value is pushed, a previous value should point to it correctly.
     // Pushes and assigns the value as a new tail
     const newNode = new ListNode(value);
     if (!this.head) {
       this.head = newNode;
       this.tail = this.head;
     } else {
+      // TODO: the issue lies somewhere in lines 34 and 35, maybe due to their order, or incorrect reassignment
+      newNode.prev = this.tail;
+      this.tail?.next = newNode;
       this.tail = newNode;
-      this.tail.next = newNode;
     }
     this.length++;
     return this.tail;
