@@ -1,7 +1,7 @@
-class ListNode {
-  public value: number | null;
-  public next: ListNode | null;
-  public prev: ListNode | null;
+class ListNode<T> {
+  public value: T | null;
+  public next: ListNode<T> | null;
+  public prev: ListNode<T> | null;
 
   constructor(value) {
     this.value = value;
@@ -10,9 +10,9 @@ class ListNode {
   }
 }
 
-export default class LinkedList {
-  private head: ListNode | null;
-  private tail: ListNode | null;
+export default class LinkedList<T> {
+  private head: ListNode<T> | null;
+  private tail: ListNode<T> | null;
   private length: number;
 
   constructor() {
@@ -21,26 +21,23 @@ export default class LinkedList {
     this.length = 0;
   }
 
-  push(value: number): ListNode {
-    // TODO: Once a value is pushed, a previous value should point to it correctly.
+  push(value: T): ListNode<T> {
     // Pushes and assigns the value as a new tail
-    const newNode = new ListNode(value);
+    const newNode: ListNode<T> = new ListNode(value);
     if (!this.head) {
-      this.head = newNode;
-      this.tail = this.head;
+      this.head = this.tail = newNode;
     } else {
-      // TODO: the issue lies somewhere in lines 34 and 35, maybe due to their order, or incorrect reassignment
       newNode.prev = this.tail;
-      this.tail?.next = newNode;
+      this.tail!.next = newNode;
       this.tail = newNode;
     }
     this.length++;
     return this.tail;
   }
 
-  pop(): ListNode | undefined {
+  pop(): ListNode<T> | null {
     // Removes the tail of the list
-    if (!this.head) return undefined;
+    if (!this.head) return null;
 
     if (this.length === 1) {
       const poppedNode = this.head;
@@ -69,9 +66,9 @@ export default class LinkedList {
     return current;
   }
 
-  shift(): ListNode | undefined {
+  shift(): ListNode<T> | null {
     // Removes the head of the list
-    if (!this.head) return undefined;
+    if (!this.head) return null;
 
     let current = this.head;
     this.head = current.next;
@@ -85,9 +82,9 @@ export default class LinkedList {
     return current;
   }
 
-  unshift(value: number): ListNode {
+  unshift(value: T): ListNode<T> {
     // Assigns the value as a new head of the list
-    let newNode = new ListNode(value);
+    let newNode: ListNode<T> = new ListNode(value);
     if (!this.head) {
       this.head = newNode;
       this.tail = this.head;
@@ -98,10 +95,14 @@ export default class LinkedList {
     return this.head;
   }
 
-  get(index: number): ListNode | null {
+  get(index: number): ListNode<T> | null {
     // Gets the node at a given index and returns it
     if (index < 0 || index >= this.length) {
       return null;
+    }
+
+    if (index === 0) {
+      return this.head;
     }
 
     let counter = 0;
@@ -115,7 +116,7 @@ export default class LinkedList {
     return current;
   }
 
-  set(index: number, value: number): boolean {
+  set(index: number, value: T): boolean {
     // Sets the new value of the node at the given index
     const foundNode = this.get(index);
     if (foundNode) {
@@ -125,13 +126,13 @@ export default class LinkedList {
     return false;
   }
 
-  insert(index: number, value: number): ListNode | boolean {
+  insert(index: number, value: T): ListNode<T> | boolean {
     // Inserts the value at a given index of the list
     if (index < 0 || index > this.length) return false;
     if (index === this.length) return this.push(value);
     if (index === 0) return this.unshift(value);
 
-    const newNode = new ListNode(value);
+    const newNode: ListNode<T> = new ListNode(value);
     const prev = this.get(index - 1);
 
     if (prev !== null) {
@@ -165,4 +166,30 @@ export default class LinkedList {
 
     return this;
   }
+
+  print() {
+    const result: { value: T | null; prev: T | null; next: T | null }[] = [];
+    let current = this.head;
+
+    while (current) {
+      const nodeInfo = {
+        value: current.value,
+        prev: current.prev ? current.prev.value : null,
+        next: current.next ? current.next.value : null,
+      };
+
+      result.push(nodeInfo);
+      current = current.next;
+    }
+
+    return result;
+  }
 }
+
+let linkedList = new LinkedList();
+linkedList.push(1);
+linkedList.push(2);
+linkedList.push(3);
+linkedList.pop();
+
+let foundNode = linkedList.get(0); //?
