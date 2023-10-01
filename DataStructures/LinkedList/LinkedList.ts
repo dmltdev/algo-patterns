@@ -126,12 +126,16 @@ export default class LinkedList<T> {
     } else return null;
   }
 
-  getHead(): null | ListNode<T> {
+  getHead(): null | ListNode<T>{
     return this.head;
   }
 
   getTail(): null | ListNode<T> {
     return this.tail;
+  }
+
+  getLength(): number {
+    return this.length;
   }
 
   reverse(): LinkedList<T> {
@@ -153,7 +157,7 @@ export default class LinkedList<T> {
   }
 }
 
-function ListFromValues<T>(...values: T[]): LinkedList<T> {
+export function listFromValues<T>(...values: T[]): LinkedList<T> {
   const ll: LinkedList<T> = new LinkedList();
   for (let i = 0; i < values.length; i++) {
     ll.insertAtTail(values[i]);
@@ -161,7 +165,7 @@ function ListFromValues<T>(...values: T[]): LinkedList<T> {
   return ll;
 }
 
-function printLinkedList<T>(list: LinkedList<T>) {
+export function printLinkedList<T>(list: LinkedList<T>) {
   let node = list.getHead();
   while (assertNode(node)) {
     console.log(node.value);
@@ -169,7 +173,7 @@ function printLinkedList<T>(list: LinkedList<T>) {
   }
 }
 
-function printLinkedListInReverse<T>(list: LinkedList<T>) {
+export function printLinkedListInReverse<T>(list: LinkedList<T>) {
   let node = list.getTail();
   while (assertNode(node)) {
     console.log(node.value);
