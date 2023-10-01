@@ -1,18 +1,38 @@
-class ListNode<T> {
-  public value: T | null;
-  public next: ListNode<T> | null;
-  public prev: ListNode<T> | null;
-
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-    this.prev = null;
-  }
+interface ListNode {
+  value: number;
+  prev: null | ListNode;
+  next: null | ListNode;
 }
 
-export default class LinkedList<T> {
-  private head: ListNode<T> | null;
-  private tail: ListNode<T> | null;
+interface ListHeadNode extends ListNode {
+  next: ListNode;
+}
+
+interface ListTailNode extends ListNode {
+  prev: ListNode;
+}
+
+interface ListInnerNode extends ListNode {
+  prev: ListNode;
+  next: ListNode;
+}
+
+function assertNode(node: null | ListNode): node is ListNode {
+  return node !== null;
+}
+function assertHeadNode(node: ListNode): node is ListHeadNode {
+  return node.next !== null;
+}
+function assertTailNode(node: ListNode): node is ListTailNode {
+  return node.prev !== null;
+}
+function assertInnerNode(node: ListNode): node is ListInnerNode {
+  return node.prev !== null && node.next !== null;
+}
+
+export default class LinkedList {
+  public head: null | ListNode;
+  public tail: null | ListNode;
   private length: number;
 
   constructor() {
@@ -21,175 +41,135 @@ export default class LinkedList<T> {
     this.length = 0;
   }
 
-  push(value: T): ListNode<T> {
-    // Pushes and assigns the value as a new tail
-    const newNode: ListNode<T> = new ListNode(value);
-    if (!this.head) {
-      this.head = this.tail = newNode;
-    } else {
-      newNode.prev = this.tail;
-      this.tail!.next = newNode;
-      this.tail = newNode;
+  insertAtHead(this: LinkedList, value: number): ListNode {
+    const newHeadNode: ListNode = { value, prev: null, next: null };
+    switch (this.length) {
+      case 0:
+        this.head = newHeadNode;
+        this.tail = newHeadNode;
+        break;
+      default:
+        if (assertNode(this.head)) {
+          newHeadNode.next = this.head;
+          this.head.prev = newHeadNode;
+          this.head = newHeadNode;
+        }
+        break;
     }
-    this.length++;
-    return this.tail;
+    ++this.length;
+    return newHeadNode;
   }
 
-  pop(): ListNode<T> | null {
-    // Removes the tail of the list
-    if (!this.head) return null;
+  insertAtTail(value: number): ListNode {
+    const newTailNode: ListNode = { value, prev: null, next: null };
+    switch (this.length) {
+      case 0:
+        this.head = newTailNode;
+        this.tail = newTailNode;
+        break;
+      default:
+        if (assertNode(this.tail)) {
+          newTailNode.prev = this.tail;
+          this.tail.next = newTailNode;
+          this.tail = newTailNode;
+        }
+        break;
+    }
+    ++this.length;
+    return newTailNode;
+  }
 
-    if (this.length === 1) {
-      const poppedNode = this.head;
-      this.head = null;
-      this.tail = null;
-      this.length = 0;
+  pop(): ListNode | null {
+    if (assertNode(this.tail)) {
+      const poppedNode = this.tail;
+      --this.length;
+      switch (this.length) {
+        case 0:
+          this.head = null;
+          this.tail = null;
+          break;
+        default:
+          this.tail = poppedNode.prev;
+          if (assertNode(this.tail)) {
+            this.tail.next = null;
+          }
+          poppedNode.prev = null;
+          poppedNode.next = null;
+          break;
+      }
       return poppedNode;
-    }
-    let current = this.head,
-      newTail = current;
-
-    while (current.next) {
-      newTail = current;
-      current = current.next;
-    }
-
-    this.tail = newTail;
-    this.tail.next = null;
-    this.length--;
-
-    if (this.length === 0) {
-      this.head = null;
-      this.tail = null;
-    }
-
-    return current;
+    } else return null;
   }
 
-  shift(): ListNode<T> | null {
-    // Removes the head of the list
-    if (!this.head) return null;
-
-    let current = this.head;
-    this.head = current.next;
-
-    this.length--;
-
-    if (this.length === 0) {
-      this.tail = null;
-    }
-
-    return current;
+  shift(): ListNode | null {
+    if (assertNode(this.head)) {
+      const poppedNode = this.head;
+      --this.length;
+      switch (this.length) {
+        case 0:
+          this.head = null;
+          this.tail = null;
+          break;
+        default:
+          this.head = poppedNode.next;
+          if (assertNode(this.head)) {
+            this.head.prev = null;
+          }
+          poppedNode.prev = null;
+          poppedNode.next = null;
+          break;
+      }
+      return poppedNode;
+    } else return null;
   }
 
-  unshift(value: T): ListNode<T> {
-    // Assigns the value as a new head of the list
-    let newNode: ListNode<T> = new ListNode(value);
-    if (!this.head) {
-      this.head = newNode;
-      this.tail = this.head;
-    }
-    newNode.next = this.head;
-    this.head = newNode;
-    this.length++;
+  getHead(): null | ListNode {
     return this.head;
   }
 
-  get(index: number): ListNode<T> | null {
-    // Gets the node at a given index and returns it
-    if (index < 0 || index >= this.length) {
-      return null;
-    }
-
-    if (index === 0) {
-      return this.head;
-    }
-
-    let counter = 0;
-    let current = this.head;
-
-    while (counter !== this.length && current !== null) {
-      current = current.next;
-      counter++;
-    }
-
-    return current;
+  getTail(): null | ListNode {
+    return this.tail;
   }
 
-  set(index: number, value: T): boolean {
-    // Sets the new value of the node at the given index
-    const foundNode = this.get(index);
-    if (foundNode) {
-      foundNode.value = value;
-      return true;
-    }
-    return false;
-  }
-
-  insert(index: number, value: T): ListNode<T> | boolean {
-    // Inserts the value at a given index of the list
-    if (index < 0 || index > this.length) return false;
-    if (index === this.length) return this.push(value);
-    if (index === 0) return this.unshift(value);
-
-    const newNode: ListNode<T> = new ListNode(value);
-    const prev = this.get(index - 1);
-
-    if (prev !== null) {
-      const temp = prev.next;
-      prev.next = newNode;
-      newNode.next = temp;
-      this.length++;
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  reverse() {
-    // Reverses the list and all pointers so that the head becomes the tail and the tail becomes the head
-    if (!this.head) {
-      return undefined;
-    }
-
-    let node = this.head;
-    this.head = this.tail;
-    this.tail = node;
-    let next, prev;
-
-    for (let i = 0; i < this.length; i++) {
-      next = node.next;
-      node.next = prev;
-      prev = node;
-      node = next;
+  reverse(): LinkedList {
+    switch (this.length) {
+      case 0:
+      case 1:
+        return this;
+      default:
+        let iter = this.head;
+        while (assertNode(iter)) {
+          [iter.next, iter.prev] = [iter.prev, iter.next];
+          iter = iter.prev;
+        }
+        [this.head, this.tail] = [this.tail, this.head];
+        break;
     }
 
     return this;
   }
+}
 
-  print() {
-    const result: { value: T | null; prev: T | null; next: T | null }[] = [];
-    let current = this.head;
+function ListFromValues(...values: number[]): LinkedList {
+  const ll: LinkedList = new LinkedList();
+  for (let i = 0; i < values.length; i++) {
+    ll.insertAtTail(values[i]);
+  }
+  return ll;
+}
 
-    while (current) {
-      const nodeInfo = {
-        value: current.value,
-        prev: current.prev ? current.prev.value : null,
-        next: current.next ? current.next.value : null,
-      };
-
-      result.push(nodeInfo);
-      current = current.next;
-    }
-
-    return result;
+function printLinkedList(list: LinkedList) {
+  let node = list.getHead();
+  while (assertNode(node)) {
+    console.log(node.value);
+    node = node.next;
   }
 }
 
-let linkedList = new LinkedList();
-linkedList.push(1);
-linkedList.push(2);
-linkedList.push(3);
-linkedList.pop();
-
-let foundNode = linkedList.get(0); //?
+function printLinkedListInReverse(list: LinkedList) {
+  let node = list.getTail();
+  while (assertNode(node)) {
+    console.log(node.value);
+    node = node.prev;
+  }
+}
