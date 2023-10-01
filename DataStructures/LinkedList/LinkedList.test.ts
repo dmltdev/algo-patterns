@@ -40,51 +40,70 @@ describe("Linked List", () => {
   });
 
   it("#pop", () => {
-    linkedList.insertAtTail(1);
-    linkedList.insertAtTail(2);
-    expect(linkedList.length).toBe(2);
-    expect(linkedList.tail.value).toBe(2);
-    expect(linkedList.tail.prev.value).toBe(1);
-
-    const poppedNode = linkedList.pop();
-    expect(poppedNode.value).toBe(2);
-    expect(poppedNode.prev).toBe(null);
-    expect(linkedList.length).toBe(1);
-
-    linkedList.pop();
-    expect(linkedList.length).toBe(0);
-    expect(linkedList.tail).toBeNull();
-    expect(linkedList.head).toBeNull();
-
+    // Popping from an empty list
     expect(linkedList.pop()).toBeNull();
-  });
+    expect(linkedList.length).toBe(0);
 
-  it("#shift", () => {
+    // Popping from a list with one node
+    linkedList.insertAtTail(1);
+    expect(linkedList.pop().value).toBe(1);
+    expect(linkedList.length).toBe(0);
+    expect(linkedList.head).toBeNull();
+    expect(linkedList.tail).toBeNull();
+
+    // Popping from a list with multiple nodes
     linkedList.insertAtTail(1);
     linkedList.insertAtTail(2);
     linkedList.insertAtTail(3);
-
-    expect(linkedList.head.value).toBe(1);
-    linkedList.shift();
-    expect(linkedList.head.value).toBe(2);
-    linkedList.shift();
-    expect(linkedList.head.value).toBe(3);
-    linkedList.shift();
+    expect(linkedList.pop().value).toBe(3);
+    expect(linkedList.pop().value).toBe(2);
+    expect(linkedList.pop().value).toBe(1);
+    expect(linkedList.pop()).toBeNull();
+    expect(linkedList.length).toBe(0);
     expect(linkedList.head).toBeNull();
+    expect(linkedList.tail).toBeNull();
+  });
+
+  it("#shift", () => {
+    // Shifting from an empty list
+    expect(linkedList.shift()).toBeNull();
+    expect(linkedList.length).toBe(0);
+
+    // Shifting from a list with one node
+    linkedList.insertAtTail(1);
+    expect(linkedList.shift()?.value).toBe(1);
+    expect(linkedList.length).toBe(0);
+    expect(linkedList.head).toBeNull();
+    expect(linkedList.tail).toBeNull();
+
+    // Shifting from a list with multiple nodes
+    linkedList.insertAtTail(1);
+    linkedList.insertAtTail(2);
+    linkedList.insertAtTail(3);
+    expect(linkedList.shift()?.value).toBe(1);
+    expect(linkedList.shift()?.value).toBe(2);
+    expect(linkedList.shift()?.value).toBe(3);
+    expect(linkedList.shift()).toBeNull();
+    expect(linkedList.length).toBe(0);
+    expect(linkedList.head).toBeNull();
+    expect(linkedList.tail).toBeNull();
   });
 
   it("#getHead", () => {
-    linkedList.insertAtHead(3);
     linkedList.insertAtHead(2);
     linkedList.insertAtHead(1);
-    const head = linkedList.head,
-    tail = linkedList.tail;
-    expect(linkedList.getHead()).toEqual(head);
+    const tail = linkedList.getTail();
+    const head = linkedList.getHead();
     expect(linkedList.getHead()).not.toEqual(tail);
-  })
+    expect(tail.value).toBe(2);
+    expect(head.value).toBe(1);
+  });
 
   it("#getTail", () => {
-    const tail = linkedList.tail;
-    expect(linkedList.getTail()).toEqual(tail);
-  })
+    linkedList.insertAtHead(2);
+    linkedList.insertAtHead(1);
+    const head = linkedList.getHead();
+    expect(head.value).toBe(1);
+    expect(linkedList.getTail()).not.toEqual(head);
+  });
 });

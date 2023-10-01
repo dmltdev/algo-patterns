@@ -1,38 +1,41 @@
-interface ListNode {
-  value: number;
-  prev: null | ListNode;
-  next: null | ListNode;
+interface ListNode<T> {
+  value: T;
+  prev: null | ListNode<T>;
+  next: null | ListNode<T>;
 }
 
-interface ListHeadNode extends ListNode {
-  next: ListNode;
+interface ListHeadNode<T> extends ListNode<T> {
+  next: ListNode<T>;
 }
 
-interface ListTailNode extends ListNode {
-  prev: ListNode;
+interface ListTailNode<T> extends ListNode<T> {
+  prev: ListNode<T>;
 }
 
-interface ListInnerNode extends ListNode {
-  prev: ListNode;
-  next: ListNode;
+interface ListInnerNode<T> extends ListNode<T> {
+  prev: ListNode<T>;
+  next: ListNode<T>;
 }
 
-function assertNode(node: null | ListNode): node is ListNode {
+function assertNode<T>(node: null | ListNode<T>): node is ListNode<T> {
   return node !== null;
 }
-function assertHeadNode(node: ListNode): node is ListHeadNode {
+
+function assertHeadNode<T>(node: ListNode<T>): node is ListHeadNode<T> {
   return node.next !== null;
 }
-function assertTailNode(node: ListNode): node is ListTailNode {
+
+function assertTailNode<T>(node: ListNode<T>): node is ListTailNode<T> {
   return node.prev !== null;
 }
-function assertInnerNode(node: ListNode): node is ListInnerNode {
+
+function assertInnerNode<T>(node: ListNode<T>): node is ListInnerNode<T> {
   return node.prev !== null && node.next !== null;
 }
 
-export default class LinkedList {
-  public head: null | ListNode;
-  public tail: null | ListNode;
+export default class LinkedList<T> {
+  private head: null | ListNode<T>;
+  private tail: null | ListNode<T>;
   private length: number;
 
   constructor() {
@@ -41,8 +44,8 @@ export default class LinkedList {
     this.length = 0;
   }
 
-  insertAtHead(this: LinkedList, value: number): ListNode {
-    const newHeadNode: ListNode = { value, prev: null, next: null };
+  insertAtHead(this: LinkedList<T>, value: T): ListNode<T> {
+    const newHeadNode: ListNode<T> = { value, prev: null, next: null };
     switch (this.length) {
       case 0:
         this.head = newHeadNode;
@@ -60,8 +63,8 @@ export default class LinkedList {
     return newHeadNode;
   }
 
-  insertAtTail(value: number): ListNode {
-    const newTailNode: ListNode = { value, prev: null, next: null };
+  insertAtTail(value: T): ListNode<T> {
+    const newTailNode: ListNode<T> = { value, prev: null, next: null };
     switch (this.length) {
       case 0:
         this.head = newTailNode;
@@ -79,7 +82,7 @@ export default class LinkedList {
     return newTailNode;
   }
 
-  pop(): ListNode | null {
+  pop(): ListNode<T> | null {
     if (assertNode(this.tail)) {
       const poppedNode = this.tail;
       --this.length;
@@ -101,7 +104,7 @@ export default class LinkedList {
     } else return null;
   }
 
-  shift(): ListNode | null {
+  shift(): ListNode<T> | null {
     if (assertNode(this.head)) {
       const poppedNode = this.head;
       --this.length;
@@ -123,15 +126,15 @@ export default class LinkedList {
     } else return null;
   }
 
-  getHead(): null | ListNode {
+  getHead(): null | ListNode<T> {
     return this.head;
   }
 
-  getTail(): null | ListNode {
+  getTail(): null | ListNode<T> {
     return this.tail;
   }
 
-  reverse(): LinkedList {
+  reverse(): LinkedList<T> {
     switch (this.length) {
       case 0:
       case 1:
@@ -150,15 +153,15 @@ export default class LinkedList {
   }
 }
 
-function ListFromValues(...values: number[]): LinkedList {
-  const ll: LinkedList = new LinkedList();
+function ListFromValues<T>(...values: T[]): LinkedList<T> {
+  const ll: LinkedList<T> = new LinkedList();
   for (let i = 0; i < values.length; i++) {
     ll.insertAtTail(values[i]);
   }
   return ll;
 }
 
-function printLinkedList(list: LinkedList) {
+function printLinkedList<T>(list: LinkedList<T>) {
   let node = list.getHead();
   while (assertNode(node)) {
     console.log(node.value);
@@ -166,7 +169,7 @@ function printLinkedList(list: LinkedList) {
   }
 }
 
-function printLinkedListInReverse(list: LinkedList) {
+function printLinkedListInReverse<T>(list: LinkedList<T>) {
   let node = list.getTail();
   while (assertNode(node)) {
     console.log(node.value);
