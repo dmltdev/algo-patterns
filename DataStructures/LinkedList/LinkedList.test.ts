@@ -74,6 +74,9 @@ describe("Linked List", () => {
   });
 
   it("#getHead", () => {
+    linkedList.insertAtHead(3);
+    linkedList.insertAtHead(2);
+    linkedList.insertAtHead(1);
     const head = linkedList.head,
     tail = linkedList.tail;
     expect(linkedList.getHead()).toEqual(head);
