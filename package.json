@@ -1,7 +1,6 @@
 {
   "name": "algorithms-data-structures",
   "version": "1.0.0",
-  "main": "algo.luhn.validateCreditCard.js",
   "scripts": {
     "test": "jest --coverage"
   },
