@@ -2,4 +2,4 @@
 
 The repository contains tested implementations of common data structures and algorithms.
 
-Implemented with TypeScript, Python, and Golang. 
+Implemented with TypeScript, Python, and Golang.
