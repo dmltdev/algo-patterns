@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
 
-The repository contains 100%-tested implementations of common data structures and algorithms.
+The repository contains fully-tested implementations of common data structures and algorithms.
 
-Implemented with TypeScript, Python, and Golang.
+Implemented with TypeScript, Python, and Golang. Testing coverage is 90%+.

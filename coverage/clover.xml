@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1702636314734" clover="3.2.0">
-  <project timestamp="1702636314741" name="All files">
+<coverage generated="1702637027361" clover="3.2.0">
+  <project timestamp="1702637027362" name="All files">
     <metrics statements="289" coveredstatements="284" conditionals="89" coveredconditionals="80" methods="49" coveredmethods="46" elements="427" coveredelements="410" complexity="0" loc="289" ncloc="289" packages="13" files="13" classes="13"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
@@ -97,11 +97,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="193" type="stmt"/>
-        <line num="33" count="193" type="stmt"/>
-        <line num="34" count="19008" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="4837" type="stmt"/>
-        <line num="36" count="4837" type="stmt"/>
+        <line num="32" count="183" type="stmt"/>
+        <line num="33" count="183" type="stmt"/>
+        <line num="34" count="18018" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5172" type="stmt"/>
+        <line num="36" count="5172" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -115,8 +115,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4882" type="stmt"/>
-        <line num="35" count="4882" type="stmt"/>
+        <line num="34" count="5117" type="stmt"/>
+        <line num="35" count="5117" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -129,9 +129,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1087" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="520" type="stmt"/>
-        <line num="35" count="567" type="stmt"/>
+        <line num="31" count="1085" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="511" type="stmt"/>
+        <line num="35" count="574" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -151,9 +151,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="663" type="stmt"/>
+        <line num="25" count="681" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="186" type="stmt"/>
+        <line num="29" count="188" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>
