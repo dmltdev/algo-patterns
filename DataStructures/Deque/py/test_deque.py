@@ -34,7 +34,7 @@ def test_add_front(empty_deque):
   empty_deque.addFront(3)
   assert empty_deque.size() == 3
   
-def test_remove_deque(filled_deque):
+def test_remove_front(filled_deque):
   assert filled_deque.removeFront() == 1
   assert filled_deque.size() == 2
     
