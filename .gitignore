@@ -1,1 +1,8 @@
-node_modules
+node_modules/
+.coverage
+*.pyc
+__pycache__/
+.idea/
+.vscode/
+pip-log.txt
+.DS_Store
