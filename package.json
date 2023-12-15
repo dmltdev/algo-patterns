@@ -2,7 +2,8 @@
   "name": "compendium",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "py-test": "python -m coverage run --module pytest -v && python -m coverage report -m"
   },
   "keywords": [],
   "author": "",
