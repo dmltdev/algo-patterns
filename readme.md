@@ -1,12 +1,5 @@
-# Software Development Compendium
+# Data Structures and Algorithms
 
-This repository is my way of exploring the wast software development principles, such as:
+The repository contains 100%-tested implementations of common data structures and algorithms.
 
-* Algorithms
-* Data Structures
-* System Design
-* Design Patterns
-* CI/CD
-* Quality Assurance
-* OS & Networking
-* SDLC Methodologies
+Implemented with TypeScript, Python, and Golang.
