@@ -6,12 +6,8 @@ import binarySearch from "./BinarySearch/BinarySearch";
 import metaBinarySearch from "./MetaBinarySearch/MetaBinarySearch";
 import exponentialSearch from "./ExponentialSearch/ExponentialSearch";
 
-// Create a new Benchmark.js suite
 const suite = new Benchmark.Suite();
 
-// Create test subjects;
-
-//Array with 10000 elements
 function shuffleArray(arr: number[]): void {
   const n = arr.length;
   for (let i = n - 1; i > 0; i--) {
@@ -24,10 +20,8 @@ function shuffleArray(arr: number[]): void {
 const array: number[] = Array.from(Array(10000 + 1).keys()).slice(1);
 shuffleArray(array);
 
-// Elements to search
-const target = array[array.length - 100]; //?
+const target = array[array.length - 100];
 
-// Add benchmark tests to the suite
 suite
   .add("Linear Search", function () {
     linearSearch(array, target);

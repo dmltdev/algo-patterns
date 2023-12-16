@@ -1,4 +1,4 @@
-import linearSearch from "../../LinearSearch/LinearSearch";
+import linearSearch from "./LinearSearch";
 
 //Array with numbers 1-100
 const arr = Array.from(Array(100 + 1).keys()).slice(1); //?
