@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1702974579919" clover="3.2.0">
-  <project timestamp="1702974579919" name="All files">
-    <metrics statements="308" coveredstatements="303" conditionals="91" coveredconditionals="82" methods="57" coveredmethods="54" elements="456" coveredelements="439" complexity="0" loc="308" ncloc="308" packages="14" files="14" classes="14"/>
+<coverage generated="1702977881126" clover="3.2.0">
+  <project timestamp="1702977881126" name="All files">
+    <metrics statements="358" coveredstatements="349" conditionals="111" coveredconditionals="98" methods="67" coveredmethods="64" elements="536" coveredelements="511" complexity="0" loc="358" ncloc="358" packages="14" files="15" classes="15"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BoyerMooreVoting.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\BoyerMooreVotingAlgorithm\BoyerMooreVoting.ts">
@@ -97,11 +97,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="183" type="stmt"/>
-        <line num="33" count="183" type="stmt"/>
-        <line num="34" count="18018" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="4684" type="stmt"/>
-        <line num="36" count="4684" type="stmt"/>
+        <line num="32" count="165" type="stmt"/>
+        <line num="33" count="165" type="stmt"/>
+        <line num="34" count="16236" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="4725" type="stmt"/>
+        <line num="36" count="4725" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -115,8 +115,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4680" type="stmt"/>
-        <line num="35" count="4680" type="stmt"/>
+        <line num="34" count="4938" type="stmt"/>
+        <line num="35" count="4938" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -129,9 +129,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1088" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="530" type="stmt"/>
-        <line num="35" count="558" type="stmt"/>
+        <line num="31" count="1087" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="537" type="stmt"/>
+        <line num="35" count="550" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -151,9 +151,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="694" type="stmt"/>
+        <line num="25" count="646" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="190" type="stmt"/>
+        <line num="29" count="187" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>
@@ -213,7 +213,7 @@
       </file>
     </package>
     <package name="DataStructures.Hash">
-      <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
+      <metrics statements="69" coveredstatements="65" conditionals="22" coveredconditionals="18" methods="18" coveredmethods="18"/>
       <file name="HashSet.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Hash\HashSet.ts">
         <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
         <line num="15" count="1" type="stmt"/>
@@ -235,6 +235,59 @@
         <line num="45" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
+      </file>
+      <file name="HashTable.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Hash\HashTable.ts">
+        <metrics statements="50" coveredstatements="46" conditionals="20" coveredconditionals="16" methods="10" coveredmethods="10"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="8" count="29" type="stmt"/>
+        <line num="9" count="29" type="stmt"/>
+        <line num="10" count="153" type="stmt"/>
+        <line num="12" count="29" type="stmt"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="16" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="14" type="stmt"/>
+        <line num="27" count="14" type="stmt"/>
+        <line num="29" count="16" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="33" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="9" type="stmt"/>
+        <line num="35" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="9" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="61" count="6" type="stmt"/>
+        <line num="62" count="6" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="78" count="6" type="stmt"/>
+        <line num="79" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
       </file>
     </package>
     <package name="DataStructures.LinkedList">
