@@ -6,6 +6,7 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "module": "ESNext",
+    "isolatedModules": true, // to avoid type name conflicts
     "sourceMap": false,
     "noImplicitAny": false,
     "noEmit": true,
