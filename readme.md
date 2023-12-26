@@ -17,6 +17,7 @@ Implemented with TypeScript, Python, Golang, and C++.
 * Ensure that all the packages are installed: `pip install -r requirements.txt`
 * Write tests with PyTest in test_filename.py files
 * Run `python -m coverage run --module pytest -v && python -m coverage report -m` to see the coverage report
+* Or run `pnpm py-test`
 
 ### Golang
 
@@ -24,6 +25,14 @@ Implemented with TypeScript, Python, Golang, and C++.
 * Write tests with "testing" library in test_filename.go files
 * Run `go test -coverprofile=coverage.out` to generate a coverage report
 * Run `go tool cover -html=coverage.out` to generate a human-readable coverage report in HTML
+
+### C++
+
+* To
+* be
+* added
+
+---
 
 ## Three rules of determining Big O
 
