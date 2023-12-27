@@ -22,7 +22,8 @@ class LRUCache:
     
   # Inserts MRU node
   def insert(self, node: Node) -> None:
-    # [LRU]⇿[...]⇿[MRU] => [LRU]⇿[...]⇿[prev MRU]⇿[new MRU]
+    # [LRU]⇿[...]⇿[prev MRU]⇿[MRU] => [LRU]⇿[...]⇿[prev MRU]⇿[new MRU]⇿[MRU]
+
     prev, nxt = self.right.prev, self.right
     prev.next = nxt.prev = node
     node.next, node.prev = nxt, prev

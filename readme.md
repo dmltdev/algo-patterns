@@ -83,3 +83,5 @@ Implemented with TypeScript, Python, Golang, and C++.
 ### Sorting Algorithms
 
 ## Data Structures
+
+* Sentinels - in the context of data structures, particularly linked lists, "sentinels" are special nodes used as boundary markers.
