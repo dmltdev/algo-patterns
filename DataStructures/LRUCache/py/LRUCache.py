@@ -1,4 +1,3 @@
-# Hash map stores the nodes of the doubly linked list, allowing O(1) access time to any node when given its key.
 class Node:
   def __init__(self, key, val):
     self.key, self.val = key, val
@@ -8,7 +7,6 @@ class LRUCache:
   def __init__(self, capacity: int): 
     self.cap = capacity
     self.cache = {}
-    
     # Left = LRU, right = MRU
     self.left, self.right = Node(0, 0), Node(0, 0)
     self.left.next, self.right.prev = self.right, self.left
@@ -22,8 +20,7 @@ class LRUCache:
     
   # Inserts MRU node
   def insert(self, node: Node) -> None:
-    # [LRU]⇿[...]⇿[prev MRU]⇿[MRU] => [LRU]⇿[...]⇿[prev MRU]⇿[new MRU]⇿[MRU]
-
+    # [Left Sentinel]⇿[...]⇿[prev MRU]⇿[Right Sentinel] => [Left Sentinel]⇿[...]⇿[prev MRU]⇿[node (new MRU)]⇿[Right Sentinel]
     prev, nxt = self.right.prev, self.right
     prev.next = nxt.prev = node
     node.next, node.prev = nxt, prev

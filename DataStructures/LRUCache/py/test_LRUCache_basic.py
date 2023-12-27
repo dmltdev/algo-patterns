@@ -26,6 +26,7 @@ def test_get(filled_LRUCache):
 def test_capacity(filled_LRUCache):
   filled_LRUCache.put(4, 40)
   assert filled_LRUCache.get(1) == -1
+  assert filled_LRUCache.get(4) == 40
   
 def test_putting_the_same_key(filled_LRUCache):
   filled_LRUCache.put(1, 15)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703667477484" clover="3.2.0">
-  <project timestamp="1703667477484" name="All files">
-    <metrics statements="393" coveredstatements="380" conditionals="119" coveredconditionals="103" methods="73" coveredmethods="70" elements="585" coveredelements="553" complexity="0" loc="393" ncloc="393" packages="15" files="16" classes="16"/>
+<coverage generated="1703671114055" clover="3.2.0">
+  <project timestamp="1703671114055" name="All files">
+    <metrics statements="412" coveredstatements="399" conditionals="119" coveredconditionals="104" methods="74" coveredmethods="71" elements="605" coveredelements="574" complexity="0" loc="412" ncloc="412" packages="15" files="16" classes="16"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BoyerMooreVoting.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\BoyerMooreVotingAlgorithm\BoyerMooreVoting.ts">
@@ -97,11 +97,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="176" type="stmt"/>
-        <line num="33" count="176" type="stmt"/>
-        <line num="34" count="17325" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="5096" type="stmt"/>
-        <line num="36" count="5096" type="stmt"/>
+        <line num="32" count="178" type="stmt"/>
+        <line num="33" count="178" type="stmt"/>
+        <line num="34" count="17523" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="4953" type="stmt"/>
+        <line num="36" count="4953" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -115,8 +115,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4955" type="stmt"/>
-        <line num="35" count="4955" type="stmt"/>
+        <line num="34" count="4892" type="stmt"/>
+        <line num="35" count="4892" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -129,9 +129,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1073" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="519" type="stmt"/>
-        <line num="35" count="554" type="stmt"/>
+        <line num="31" count="1090" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="508" type="stmt"/>
+        <line num="35" count="582" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -151,9 +151,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="651" type="stmt"/>
+        <line num="25" count="627" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="185" type="stmt"/>
+        <line num="29" count="191" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>
@@ -291,44 +291,63 @@
       </file>
     </package>
     <package name="DataStructures.LRUCache.ts">
-      <metrics statements="35" coveredstatements="31" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="6"/>
+      <metrics statements="54" coveredstatements="50" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
       <file name="LRUCache.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\LRUCache\ts\LRUCache.ts">
-        <metrics statements="35" coveredstatements="31" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="6"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="10" count="14" type="stmt"/>
-        <line num="11" count="14" type="stmt"/>
-        <line num="12" count="14" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="26" count="3" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="36" count="4" type="stmt"/>
-        <line num="41" count="12" type="stmt"/>
-        <line num="42" count="12" type="stmt"/>
-        <line num="43" count="12" type="stmt"/>
-        <line num="44" count="12" type="stmt"/>
-        <line num="45" count="12" type="stmt"/>
-        <line num="49" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="50" count="4" type="stmt"/>
-        <line num="51" count="4" type="stmt"/>
-        <line num="52" count="4" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="57" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="60" count="8" type="stmt"/>
-        <line num="61" count="8" type="stmt"/>
-        <line num="62" count="8" type="cond" truecount="2" falsecount="2"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
+        <metrics statements="54" coveredstatements="50" conditionals="8" coveredconditionals="6" methods="7" coveredmethods="7"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="21" count="29" type="stmt"/>
+        <line num="22" count="29" type="stmt"/>
+        <line num="23" count="29" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="52" count="24" type="stmt"/>
+        <line num="53" count="24" type="stmt"/>
+        <line num="54" count="24" type="stmt"/>
+        <line num="55" count="24" type="stmt"/>
+        <line num="56" count="24" type="stmt"/>
+        <line num="60" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="5" type="stmt"/>
+        <line num="62" count="5" type="stmt"/>
+        <line num="63" count="5" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="68" count="19" type="cond" truecount="1" falsecount="1"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="19" type="stmt"/>
+        <line num="72" count="19" type="stmt"/>
+        <line num="73" count="19" type="cond" truecount="1" falsecount="1"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="99" count="7" type="stmt"/>
+        <line num="100" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="121" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
       </file>
     </package>
     <package name="DataStructures.LinkedList">
