@@ -3,11 +3,11 @@ LRU cache uses a doubly linked list in combination with a hash map.
 The hash map provides O(1) access to nodes, and the linked list maintains the order of nodes from least recently used (LRU) to most recently used (MRU).
 
 !The linked list is initialized with sentinel nodes that are not stored in the hash map: they are fixed and only the next and prev pointers of these nodes and other nodes in the list are updated. 
-!Sentinel nodes are dummy nodes that they simplify the code by eliminating the need for checking special cases (like inserting or removing at the beginning or end of the list), but they do not affect the inherent time complexity of these operations.
+!Sentinel nodes are dummy nodes that simplify the code by eliminating the need for checking special cases (like inserting or removing at the beginning or end of the list), but they do not affect the inherent time complexity of these operations.
 
 When a value is looked up, it becomes the most recently used (MRU), hence its position is changed to the right. 
 The least recently used node (LRU) is located at the left. 
-When we put a new node to the cache, exceeding its capacity, the LRU node is evicted.
+When a new node is put to the cache, exceeding its capacity, the LRU node is evicted.
 */
 
 export class Node {
