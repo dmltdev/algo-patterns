@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1702977881126" clover="3.2.0">
-  <project timestamp="1702977881126" name="All files">
-    <metrics statements="358" coveredstatements="349" conditionals="111" coveredconditionals="98" methods="67" coveredmethods="64" elements="536" coveredelements="511" complexity="0" loc="358" ncloc="358" packages="14" files="15" classes="15"/>
+<coverage generated="1703667477484" clover="3.2.0">
+  <project timestamp="1703667477484" name="All files">
+    <metrics statements="393" coveredstatements="380" conditionals="119" coveredconditionals="103" methods="73" coveredmethods="70" elements="585" coveredelements="553" complexity="0" loc="393" ncloc="393" packages="15" files="16" classes="16"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="BoyerMooreVoting.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\BoyerMooreVotingAlgorithm\BoyerMooreVoting.ts">
+      <file name="BoyerMooreVoting.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\BoyerMooreVotingAlgorithm\BoyerMooreVoting.ts">
         <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="7" type="stmt"/>
@@ -22,7 +22,7 @@
     </package>
     <package name="Algorithms.Search.BinarySearch">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="BinarySearch.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Search\BinarySearch\BinarySearch.ts">
+      <file name="BinarySearch.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Search\BinarySearch\BinarySearch.ts">
         <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="21" type="stmt"/>
@@ -40,7 +40,7 @@
     </package>
     <package name="Algorithms.Search.ExponentialSearch">
       <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
-      <file name="ExponentialSearch.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Search\ExponentialSearch\ExponentialSearch.ts">
+      <file name="ExponentialSearch.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Search\ExponentialSearch\ExponentialSearch.ts">
         <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
         <line num="2" count="1" type="stmt"/>
         <line num="8" count="10" type="cond" truecount="2" falsecount="0"/>
@@ -62,7 +62,7 @@
     </package>
     <package name="Algorithms.Search.LinearSearch">
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="LinearSearch.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Search\LinearSearch\LinearSearch.ts">
+      <file name="LinearSearch.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Search\LinearSearch\LinearSearch.ts">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
@@ -74,7 +74,7 @@
     </package>
     <package name="Algorithms.Search.__solutions__">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="TwoCrystalBalls.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Search\__solutions__\TwoCrystalBalls.ts">
+      <file name="TwoCrystalBalls.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Search\__solutions__\TwoCrystalBalls.ts">
         <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -92,31 +92,31 @@
     </package>
     <package name="Algorithms.Sorting.BubbleSort">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="BubbleSort.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Sorting\BubbleSort\BubbleSort.ts">
+      <file name="BubbleSort.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Sorting\BubbleSort\BubbleSort.ts">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="165" type="stmt"/>
-        <line num="33" count="165" type="stmt"/>
-        <line num="34" count="16236" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="4725" type="stmt"/>
-        <line num="36" count="4725" type="stmt"/>
+        <line num="32" count="176" type="stmt"/>
+        <line num="33" count="176" type="stmt"/>
+        <line num="34" count="17325" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5096" type="stmt"/>
+        <line num="36" count="5096" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Algorithms.Sorting.InsertionSort">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="InsertionSort.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Sorting\InsertionSort\InsertionSort.ts">
+      <file name="InsertionSort.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Sorting\InsertionSort\InsertionSort.ts">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4938" type="stmt"/>
-        <line num="35" count="4938" type="stmt"/>
+        <line num="34" count="4955" type="stmt"/>
+        <line num="35" count="4955" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -124,14 +124,14 @@
     </package>
     <package name="Algorithms.Sorting.MergeSort">
       <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <file name="MergeSort.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Sorting\MergeSort\MergeSort.ts">
+      <file name="MergeSort.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Sorting\MergeSort\MergeSort.ts">
         <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1087" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="537" type="stmt"/>
-        <line num="35" count="550" type="stmt"/>
+        <line num="31" count="1073" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="519" type="stmt"/>
+        <line num="35" count="554" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -144,23 +144,23 @@
     </package>
     <package name="Algorithms.Sorting.SelectionSort">
       <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="SelectionSort.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\Algorithms\Sorting\SelectionSort\SelectionSort.ts">
+      <file name="SelectionSort.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Sorting\SelectionSort\SelectionSort.ts">
         <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="19" count="1" type="stmt"/>
         <line num="21" count="3" type="stmt"/>
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="646" type="stmt"/>
+        <line num="25" count="651" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="187" type="stmt"/>
+        <line num="29" count="185" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>
     </package>
     <package name="DataStructures.Deque.ts">
       <metrics statements="48" coveredstatements="47" conditionals="16" coveredconditionals="15" methods="10" coveredmethods="10"/>
-      <file name="deque.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Deque\ts\deque.ts">
+      <file name="deque.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Deque\ts\deque.ts">
         <metrics statements="48" coveredstatements="47" conditionals="16" coveredconditionals="15" methods="10" coveredmethods="10"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -212,9 +212,9 @@
         <line num="103" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="DataStructures.Hash">
+    <package name="DataStructures.Hash.ts">
       <metrics statements="69" coveredstatements="65" conditionals="22" coveredconditionals="18" methods="18" coveredmethods="18"/>
-      <file name="HashSet.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Hash\HashSet.ts">
+      <file name="HashSet.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Hash\ts\HashSet.ts">
         <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
         <line num="15" count="1" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
@@ -236,7 +236,7 @@
         <line num="48" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
       </file>
-      <file name="HashTable.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Hash\HashTable.ts">
+      <file name="HashTable.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Hash\ts\HashTable.ts">
         <metrics statements="50" coveredstatements="46" conditionals="20" coveredconditionals="16" methods="10" coveredmethods="10"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="8" type="stmt"/>
@@ -290,9 +290,50 @@
         <line num="106" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="DataStructures.LRUCache.ts">
+      <metrics statements="35" coveredstatements="31" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="6"/>
+      <file name="LRUCache.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\LRUCache\ts\LRUCache.ts">
+        <metrics statements="35" coveredstatements="31" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="6"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="11" count="14" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="49" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="60" count="8" type="stmt"/>
+        <line num="61" count="8" type="stmt"/>
+        <line num="62" count="8" type="cond" truecount="2" falsecount="2"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="DataStructures.LinkedList">
       <metrics statements="97" coveredstatements="93" conditionals="27" coveredconditionals="19" methods="17" coveredmethods="14"/>
-      <file name="LinkedList.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\LinkedList\LinkedList.ts">
+      <file name="LinkedList.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\LinkedList\LinkedList.ts">
         <metrics statements="97" coveredstatements="93" conditionals="27" coveredconditionals="19" methods="17" coveredmethods="14"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -395,7 +436,7 @@
     </package>
     <package name="DataStructures.Queue">
       <metrics statements="23" coveredstatements="23" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
-      <file name="Queue.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Queue\Queue.ts">
+      <file name="Queue.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Queue\Queue.ts">
         <metrics statements="23" coveredstatements="23" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
         <line num="24" count="1" type="stmt"/>
         <line num="30" count="5" type="stmt"/>
@@ -424,7 +465,7 @@
     </package>
     <package name="DataStructures.Stack">
       <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
-      <file name="Stack.ts" path="C:\Users\jpmat\programming\repositories\dsa-compendium\DataStructures\Stack\Stack.ts">
+      <file name="Stack.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Stack\Stack.ts">
         <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
         <line num="2" count="1" type="stmt"/>
         <line num="7" count="4" type="stmt"/>

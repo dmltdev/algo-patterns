@@ -1,3 +1,7 @@
+/* 
+LRU and MRU are sentinels! These sentinel nodes are fixed and only the next and prev pointers of these nodes and other nodes in the list are updated.
+*/
+
 export class Node {
   public key: number;
   public val: number;
@@ -11,7 +15,7 @@ export class Node {
   }
 }
 
-class LRUCache {
+export default class LRUCache {
   public cap: number;
   public cache: Map<number, number>;
   public left: Node;
@@ -71,3 +75,20 @@ class LRUCache {
     }
   }
 }
+
+const cache = new LRUCache(5);
+cache.put(1, 10);
+cache.put(2, 20);
+cache.put(3, 30);
+cache.put(4, 40);
+cache.put(5, 50);
+
+// LRU Sentinel Node
+console.log(cache.left.val) //?
+console.log(cache.left.next!.val); //?
+console.log(cache.left.next!.next!.val); //?
+console.log(cache.left.next!.next!.next!.val); //?
+console.log(cache.left.next!.next!.next!.next!.val); //?
+console.log(cache.left.next!.next!.next!.next!.next!.val); //?
+// MRU Sentinel Node
+console.log(cache.right.val) //? 
