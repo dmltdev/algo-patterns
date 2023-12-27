@@ -1,18 +1,23 @@
-class ListNode {
+export class Node<T> {
+  public data: T;
+  public next: Node<T> | null;
   constructor(data) {
     this.data = data;
     this.next = null;
   }
 }
 
-class LinkedList {
-  constructor(head = null) {
-    this.head = head;
+export default class SinglyLinkedList<T> {
+  public head: Node<T> | null;
+  public next: Node<T> | null;
+
+  constructor(head: Node<T>) {
+    this.head = head || null;
     this.next = null;
   }
 
-  push(data) {
-    let newNode = new ListNode(data);
+  push(data: T) {
+    let newNode: Node<T> = new Node(data);
 
     newNode.next = this.head;
     this.head = newNode;
@@ -65,57 +70,6 @@ class LinkedList {
     head = prevNode;
     return head;
   }
-
-  detectLoop() {
-    /*
-        Floyd's cycle-finding algorithm, also known as the "tortoise and the hare" algorithm, 
-        to detect loops in a linked list. 
-        It uses two pointers, slowPtr and fastPtr, starting from the head of the linked list.
-        The slowPtr moves one step at a time, while the fastPtr moves two steps at a time. 
-        If there is a loop in the linked list, eventually, the fastPtr will catch up to the slowPtr inside the loop.
-        */
-    let slowPtr = this.head;
-    let fastPtr = this.head;
-
-    while (fastPtr !== null && fastPtr.next !== null) {
-      slowPtr = slowPtr.next;
-      fastPtr = fastPtr.next.next;
-
-      if (slowPtr === fastPtr) {
-        return true;
-      }
-    }
-
-    return false;
-  }
-
-  detectLoop2() {
-    let set = new Set();
-    while (this.head) {
-      if (set.has(this.head)) {
-        return true;
-      }
-
-      set.add(this.head);
-      this.head = this.head.next;
-    }
-
-    return false;
-  }
-
-  detectLoop3() {
-    let current = this.head;
-
-    while (current) {
-      if (current.seen) {
-        return true;
-      }
-      current.seen = true;
-      current = current.next;
-    }
-
-    return false;
-  }
 }
 
 //! Tests
@@ -149,5 +103,3 @@ console.log(list);
 console.log(reverseList(list));
 console.log(list.detectLoop());
 console.log(list.detectLoop2());
-
-export default LinkedList;
