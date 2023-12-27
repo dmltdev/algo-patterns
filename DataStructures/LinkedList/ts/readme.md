@@ -23,3 +23,10 @@ Time Complexity
 | Deletion     | O(1)         | O(1)         |
 
 Space Compexity: O(n)
+
+## Useful applications
+
+* Dynamic memory allocation
+* Implemented in stack and queue
+* In undo functionality of softwares
+* Hash tables, Graphs

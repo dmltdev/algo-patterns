@@ -41,6 +41,14 @@ export default class LRUCache<K extends KeyType, V extends ValueType> {
     this.right.prev = this.left;
   }
 
+  clear(): void {
+    this.cache = new Map<K, Node<K, V>>();
+    this.left = new Node<K, V>(null as unknown as K, null as unknown as V);
+    this.right = new Node<K, V>(null as unknown as K, null as unknown as V);
+    this.left.next = this.right;
+    this.right.prev = this.left;
+  }
+
   remove(node: Node<K, V>): void {
     const prev = node.prev!;
     const next = node.next!;
@@ -56,22 +64,22 @@ export default class LRUCache<K extends KeyType, V extends ValueType> {
     node.prev = prev;
   }
 
-  get(key: K): V | -1 {
+  get(key: K): V | null {
     if (this.cache.has(key)) {
       const node = this.cache.get(key)!;
       this.remove(node);
       this.insert(node);
       return node.val;
     }
-    return -1;
+    return null;
   }
 
-  getNewest(): V | -1 {
-    return this.right.prev !== this.left ? this.right.prev!.val : -1;
+  peekNewest(): V | null {
+    return this.right.prev!.val;
   }
 
-  getOldest(): V | -1 {
-    return this.left.next !== this.right ? this.left.next!.val : -1;
+  peekOldest(): V | null {
+    return this.left.next!.val;
   }
 
   put(key: K, value: V): void {

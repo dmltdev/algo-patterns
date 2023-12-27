@@ -2,7 +2,7 @@ import LinkedList, {
   listFromValues,
   printLinkedList,
   printLinkedListInReverse,
-} from "./LinkedList";
+} from "./DoublyLinkedList.ts";
 
 describe("Linked List", () => {
   let linkedList;
