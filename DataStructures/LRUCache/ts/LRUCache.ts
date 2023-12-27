@@ -1,5 +1,5 @@
 /* 
-LRU and MRU are sentinels! These sentinel nodes are fixed and only the next and prev pointers of these nodes and other nodes in the list are updated.
+LRU and MRU are sentinels! These  
 */
 
 export class Node {
@@ -85,6 +85,7 @@ cache.put(5, 50);
 
 // LRU Sentinel Node
 console.log(cache.left.val) //?
+// Actual nodes located in cache
 console.log(cache.left.next!.val); //?
 console.log(cache.left.next!.next!.val); //?
 console.log(cache.left.next!.next!.next!.val); //?
