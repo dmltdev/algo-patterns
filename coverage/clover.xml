@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703779277478" clover="3.2.0">
-  <project timestamp="1703779277478" name="All files">
-    <metrics statements="459" coveredstatements="449" conditionals="131" coveredconditionals="116" methods="85" coveredmethods="82" elements="675" coveredelements="647" complexity="0" loc="459" ncloc="459" packages="16" files="18" classes="18"/>
+<coverage generated="1703802239006" clover="3.2.0">
+  <project timestamp="1703802239006" name="All files">
+    <metrics statements="459" coveredstatements="449" conditionals="133" coveredconditionals="118" methods="85" coveredmethods="82" elements="677" coveredelements="649" complexity="0" loc="459" ncloc="459" packages="16" files="18" classes="18"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BoyerMooreVoting.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\BoyerMooreVotingAlgorithm\BoyerMooreVoting.ts">
@@ -21,28 +21,28 @@
       </file>
     </package>
     <package name="Algorithms.Luhn">
-      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
       <file name="Luhn.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Luhn\Luhn.ts">
-        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="21" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="24" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="24" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="12" type="cond" truecount="2" falsecount="0"/>
         <line num="27" count="1" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="42" type="stmt"/>
-        <line num="32" count="42" type="stmt"/>
-        <line num="33" count="42" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="22" type="stmt"/>
-        <line num="36" count="42" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
-        <line num="39" count="5" type="stmt"/>
-        <line num="40" count="84" type="stmt"/>
-        <line num="42" count="5" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="30" count="11" type="stmt"/>
+        <line num="31" count="85" type="stmt"/>
+        <line num="32" count="85" type="stmt"/>
+        <line num="33" count="85" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="34" type="stmt"/>
+        <line num="36" count="85" type="stmt"/>
+        <line num="38" count="11" type="stmt"/>
+        <line num="39" count="11" type="stmt"/>
+        <line num="40" count="173" type="stmt"/>
+        <line num="42" count="11" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
       </file>
@@ -124,11 +124,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="180" type="stmt"/>
-        <line num="33" count="180" type="stmt"/>
-        <line num="34" count="17721" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="5180" type="stmt"/>
-        <line num="36" count="5180" type="stmt"/>
+        <line num="32" count="182" type="stmt"/>
+        <line num="33" count="182" type="stmt"/>
+        <line num="34" count="17919" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5135" type="stmt"/>
+        <line num="36" count="5135" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -142,8 +142,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4730" type="stmt"/>
-        <line num="35" count="4730" type="stmt"/>
+        <line num="34" count="4815" type="stmt"/>
+        <line num="35" count="4815" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -156,9 +156,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1094" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="528" type="stmt"/>
-        <line num="35" count="566" type="stmt"/>
+        <line num="31" count="1095" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="526" type="stmt"/>
+        <line num="35" count="569" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -178,9 +178,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="657" type="stmt"/>
+        <line num="25" count="582" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="194" type="stmt"/>
+        <line num="29" count="191" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>

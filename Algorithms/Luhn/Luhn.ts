@@ -20,10 +20,10 @@ export default function validateCreditCard(input: string | number): boolean {
   if (typeof input !== "string") {
     input = input.toString();
   }
-  if (input.length < 13) return false;
+  if (input.length < 13 || input.length > 19) return false;
   if (input.match(/[^0-9]/g)) return false;
 
-  input = input.replace(/[\s-]/g, ""); //?
+  input = input.replace(/[\s-]/g, "");
 
   let creditCard: number[] = input.split("").map(Number);
 
