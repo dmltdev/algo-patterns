@@ -1,12 +1,19 @@
+import Chance from "chance";
+
 import validateCreditCard from "./Luhn.ts";
 
 describe("Luhn algorithm", () => {
-  test("validates correct credit card number (string)", () => {
-    expect(validateCreditCard("4532778771091795")).toBeTruthy();
-  });
+  const chance = new Chance();
+  const visaCard = chance.cc({ type: "visa" });
+  const mastercardCard = chance.cc({ type: "mc" });
+  const amexCard = chance.cc({ type: "amex" });
+  const visaElectronCard = chance.cc({ type: "electron" });
 
-  test("validates correct credit card number (number)", () => {
-    expect(validateCreditCard(4532778771091795)).toBeTruthy();
+  test("validates correct credit card number", () => {
+    expect(validateCreditCard(visaCard)).toBeTruthy();
+    expect(validateCreditCard(mastercardCard)).toBeTruthy();
+    expect(validateCreditCard(amexCard)).toBeTruthy();
+    expect(validateCreditCard(visaElectronCard)).toBeTruthy();
   });
 
   test("rejects invalid credit card number", () => {
