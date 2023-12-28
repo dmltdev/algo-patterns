@@ -1,4 +1,4 @@
-import bubbleSort from "../../BubbleSort/BubbleSort";
+import bubbleSort from "./BubbleSort";
 
 // Helper function to construct a test array of integers
 function shuffleIntegerArray(arr: number[]): void {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703688733677" clover="3.2.0">
-  <project timestamp="1703688733677" name="All files">
-    <metrics statements="426" coveredstatements="416" conditionals="119" coveredconditionals="104" methods="82" coveredmethods="79" elements="627" coveredelements="599" complexity="0" loc="426" ncloc="426" packages="15" files="17" classes="17"/>
+<coverage generated="1703779277478" clover="3.2.0">
+  <project timestamp="1703779277478" name="All files">
+    <metrics statements="459" coveredstatements="449" conditionals="131" coveredconditionals="116" methods="85" coveredmethods="82" elements="675" coveredelements="647" complexity="0" loc="459" ncloc="459" packages="16" files="18" classes="18"/>
     <package name="Algorithms.BoyerMooreVotingAlgorithm">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="BoyerMooreVoting.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\BoyerMooreVotingAlgorithm\BoyerMooreVoting.ts">
@@ -18,6 +18,33 @@
         <line num="24" count="22" type="stmt"/>
         <line num="29" count="7" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Algorithms.Luhn">
+      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <file name="Luhn.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\Algorithms\Luhn\Luhn.ts">
+        <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="31" count="42" type="stmt"/>
+        <line num="32" count="42" type="stmt"/>
+        <line num="33" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="22" type="stmt"/>
+        <line num="36" count="42" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="84" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
       </file>
     </package>
     <package name="Algorithms.Search.BinarySearch">
@@ -97,11 +124,11 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="32" count="183" type="stmt"/>
-        <line num="33" count="183" type="stmt"/>
-        <line num="34" count="18018" type="cond" truecount="2" falsecount="0"/>
-        <line num="35" count="4666" type="stmt"/>
-        <line num="36" count="4666" type="stmt"/>
+        <line num="32" count="180" type="stmt"/>
+        <line num="33" count="180" type="stmt"/>
+        <line num="34" count="17721" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="5180" type="stmt"/>
+        <line num="36" count="5180" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
       </file>
@@ -115,8 +142,8 @@
         <line num="31" count="198" type="stmt"/>
         <line num="32" count="198" type="stmt"/>
         <line num="33" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="4964" type="stmt"/>
-        <line num="35" count="4964" type="stmt"/>
+        <line num="34" count="4730" type="stmt"/>
+        <line num="35" count="4730" type="stmt"/>
         <line num="37" count="198" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
@@ -129,9 +156,9 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="198" type="stmt"/>
         <line num="30" count="198" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1070" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="527" type="stmt"/>
-        <line num="35" count="543" type="stmt"/>
+        <line num="31" count="1094" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="528" type="stmt"/>
+        <line num="35" count="566" type="stmt"/>
         <line num="38" count="198" type="stmt"/>
         <line num="41" count="399" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="201" type="stmt"/>
@@ -151,9 +178,9 @@
         <line num="22" count="200" type="stmt"/>
         <line num="23" count="200" type="stmt"/>
         <line num="24" count="9900" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="623" type="stmt"/>
+        <line num="25" count="657" type="stmt"/>
         <line num="28" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="193" type="stmt"/>
+        <line num="29" count="194" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
       </file>
@@ -213,7 +240,7 @@
       </file>
     </package>
     <package name="DataStructures.Hash.ts">
-      <metrics statements="63" coveredstatements="59" conditionals="20" coveredconditionals="16" methods="17" coveredmethods="17"/>
+      <metrics statements="69" coveredstatements="65" conditionals="22" coveredconditionals="18" methods="18" coveredmethods="18"/>
       <file name="HashSet.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Hash\ts\HashSet.ts">
         <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
         <line num="15" count="1" type="stmt"/>
@@ -237,7 +264,7 @@
         <line num="52" count="1" type="stmt"/>
       </file>
       <file name="HashTable.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\Hash\ts\HashTable.ts">
-        <metrics statements="44" coveredstatements="40" conditionals="18" coveredconditionals="14" methods="9" coveredmethods="9"/>
+        <metrics statements="50" coveredstatements="46" conditionals="20" coveredconditionals="16" methods="10" coveredmethods="10"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="8" type="stmt"/>
         <line num="5" count="8" type="stmt"/>
@@ -282,6 +309,12 @@
         <line num="74" count="1" type="stmt"/>
         <line num="75" count="1" type="stmt"/>
         <line num="76" count="1" type="stmt"/>
+        <line num="78" count="6" type="stmt"/>
+        <line num="79" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
       </file>
     </package>
     <package name="DataStructures.LRUCache.ts">
@@ -335,9 +368,9 @@
       </file>
     </package>
     <package name="DataStructures.LinkedList.ts">
-      <metrics statements="127" coveredstatements="123" conditionals="31" coveredconditionals="22" methods="24" coveredmethods="21"/>
+      <metrics statements="133" coveredstatements="129" conditionals="33" coveredconditionals="24" methods="25" coveredmethods="22"/>
       <file name="DoublyLinkedList.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\LinkedList\ts\DoublyLinkedList.ts">
-        <metrics statements="91" coveredstatements="87" conditionals="25" coveredconditionals="17" methods="16" coveredmethods="13"/>
+        <metrics statements="97" coveredstatements="93" conditionals="27" coveredconditionals="19" methods="17" coveredmethods="14"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="46" type="stmt"/>
@@ -429,6 +462,12 @@
         <line num="153" count="3" type="stmt"/>
         <line num="154" count="3" type="stmt"/>
         <line num="157" count="1" type="stmt"/>
+        <line num="159" count="6" type="stmt"/>
+        <line num="160" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="169" count="1" type="stmt"/>
+        <line num="175" count="1" type="stmt"/>
+        <line num="181" count="1" type="stmt"/>
+        <line num="187" count="1" type="stmt"/>
       </file>
       <file name="SinglyLinkedList.ts" path="C:\Users\jpmat\programming\repositories\algo-patterns\DataStructures\LinkedList\ts\SinglyLinkedList.ts">
         <metrics statements="36" coveredstatements="36" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="8"/>

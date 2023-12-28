@@ -1,4 +1,4 @@
-import selectionSort from "../../SelectionSort/SelectionSort";
+import mergeSort from "./MergeSort";
 
 // Helper function to construct a test array of integers
 function shuffleIntegerArray(arr: number[]): void {
@@ -28,18 +28,18 @@ describe("Selection Sort", () => {
     const array = Array.from(Array(100 + 1).keys()).slice(1);
     shuffleIntegerArray(array);
     let sortedArr = array.slice().sort((a, b) => a - b);
-    expect(selectionSort(array)).toStrictEqual(sortedArr);
+    expect(mergeSort(array)).toStrictEqual(sortedArr);
   });
 
   it("Array of floating numbers is sorted", () => {
     const array = Array.from(Array(100 + 1).keys()).slice(1);
     shuffleFloatingArray(array);
     let sortedArr = array.slice().sort((a, b) => a - b);
-    expect(selectionSort(array)).toStrictEqual(sortedArr);
+    expect(mergeSort(array)).toStrictEqual(sortedArr);
   });
 
   it("Empty Array", () => {
-    expect(selectionSort([])).toStrictEqual([]);
+    expect(mergeSort([])).toStrictEqual([]);
   });
 });
 

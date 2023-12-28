@@ -41,10 +41,10 @@ function merge(left: number[], right: number[]): number[] {
 export default function mergeSort(arr: number[]): number[] {
   if (arr.length <= 1) return arr;
 
-  let mid = Math.floor(arr.length / 2);
+  const mid = Math.floor(arr.length / 2);
 
-  let left = mergeSort(arr.slice(0, mid));
-  let right = mergeSort(arr.slice(mid));
+  const left = mergeSort(arr.slice(0, mid));
+  const right = mergeSort(arr.slice(mid));
 
   return merge(left, right);
 }
