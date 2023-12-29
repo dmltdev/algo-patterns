@@ -8,9 +8,9 @@ Each node points to the next node except for the tail node, which is the last.
 
 Linked list can be of multiple types:
 
-* singly
-* doubly
-* circular
+* singly: each node points to the next node in the list
+* doubly: each node points to the previous and next nodes in the list
+* circular: same as doubly, but also the first element points to the last elements and the last element points to the first element
 
 ## Complexity
 

@@ -1,6 +1,6 @@
-import SinglyLinkedList, { Node } from "./SinglyLinkedList.ts";
+import SinglyLinkedList from "./SinglyLinkedList.ts";
 
-describe("SinglyLinkedList", () => {
+describe("Singly Linked List", () => {
   let list: SinglyLinkedList<number>;
 
   beforeEach(() => {

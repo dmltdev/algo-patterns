@@ -4,7 +4,7 @@ import LinkedList, {
   printLinkedListInReverse,
 } from "./DoublyLinkedList.ts";
 
-describe("Linked List", () => {
+describe("Doubly Linked List", () => {
   let linkedList;
 
   beforeEach(() => {
