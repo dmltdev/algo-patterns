@@ -16,6 +16,7 @@ export default class HashMap {
     this._storage = {};
   }
 
+  // O(n)
   hashStr(str: string): number {
     let finalHash = 0;
     for (let i = 0; i < str.length; i++) {
@@ -25,6 +26,7 @@ export default class HashMap {
     return finalHash;
   }
 
+  // average: O(1), worst: O(n)
   set(key: string, val: number): void {
     const hash = this.hashStr(key);
 
@@ -42,6 +44,7 @@ export default class HashMap {
     this._storage[hash].push([key, val]);
   }
 
+  // average: O(1), worst: O(k), where k is the number of key-value pairs in the same bucket.
   get(key: string): number | undefined {
     const hash = this.hashStr(key);
 
