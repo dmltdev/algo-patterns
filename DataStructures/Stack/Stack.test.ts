@@ -27,7 +27,7 @@ describe("Stack", () => {
     expect(stack.peek()).toBe(undefined);
   });
 
-  it("Should correctly calculate the lengh of the stack", () => {
+  it("Calculates the lengh of the stack", () => {
     expect(stack.length).toBe(0);
 
     stack.push(1);
@@ -37,14 +37,14 @@ describe("Stack", () => {
     expect(stack.length).toBe(2);
   });
 
-  it("isEmpty returns a correct boolean value", () => {
+  it("isEmpty returns a boolean value", () => {
     expect(stack.isEmpty()).toBe(true);
 
     stack.push(1);
     expect(stack.isEmpty()).toBe(false);
   });
 
-  it("Should handle pop when the stack is empty", () => {
+  it("Handles pop() when the stack is empty", () => {
     const poppedValue = stack.pop();
     expect(poppedValue).toBe(undefined);
     expect(stack.length).toBe(0);

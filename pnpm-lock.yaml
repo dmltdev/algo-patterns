@@ -22,6 +22,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^18.4.3
     version: 18.4.3
+  '@tsconfig/node21':
+    specifier: ^21.0.1
+    version: 21.0.1
   '@types/benchmark':
     specifier: ^2.1.5
     version: 2.1.5
@@ -850,6 +853,10 @@ packages:
 
   /@tsconfig/node16@1.0.4:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
+
+  /@tsconfig/node21@21.0.1:
+    resolution: {integrity: sha512-2Khg79N+z2Qkb9SjLzOi8cz2PSa/oUpHIeQm1YWzmWXkoFcPXFZSHgs+Z8iPCDjIoXFqMNYntiTXxfLYQMcRhw==}
+    dev: true
 
   /@types/babel__core@7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}

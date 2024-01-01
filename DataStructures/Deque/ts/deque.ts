@@ -8,6 +8,7 @@ FIFO rule (First In First Out).
 Input Restricted Deque - input is restricted at a single end but allows deletion at both the ends.
 Output Restricted Deque - output is restricted at a single end but allows insertion at both the ends.
 */
+
 export class DequeNode<T> {
   value: T;
   next: DequeNode<T> | null;

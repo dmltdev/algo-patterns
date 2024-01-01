@@ -1,9 +1,14 @@
 /*
  */
-type Node<T> = {
-  value: T;
-  prev?: Node<T>;
-};
+class Node<T> {
+  public value: T;
+  public prev: Node<T> | undefined;
+
+  constructor(value: T) {
+    this.value = value;
+    this.prev = undefined;
+  }
+}
 
 export default class Stack<T> {
   public length: number;
@@ -13,8 +18,9 @@ export default class Stack<T> {
     this.head = undefined;
     this.length = 0;
   }
+
   push(item: T): void {
-    const node = { value: item } as Node<T>;
+    const node = new Node(item);
     this.length++;
     if (!this.head) {
       this.head = node;
@@ -36,11 +42,14 @@ export default class Stack<T> {
     return poppedValue;
   }
 
-  peek() {
-    return this.head?.value;
+  peek(): T | undefined {
+    if (!this.head) {
+      return undefined;
+    }
+    return this.head.value;
   }
 
-  isEmpty() {
+  isEmpty(): boolean {
     return this.length === 0;
   }
 }
