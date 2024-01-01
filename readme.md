@@ -1,8 +1,10 @@
 # Data Structures and Algorithms
 
-The repository contains tested implementations of common data structures and algorithms.
+Status: In Progress.
 
-Implemented with TypeScript, Python, Golang, and C++.
+The repository contains tested implementations of common data structures, algorithms, and design patterns.
+
+Languages: TypeScript, Python, Golang, and C++.
 
 ## Testing
 
@@ -25,12 +27,6 @@ Implemented with TypeScript, Python, Golang, and C++.
 * Write tests with "testing" library in test_filename.go files
 * Run `go test -coverprofile=coverage.out` to generate a coverage report
 * Run `go tool cover -html=coverage.out` to generate a human-readable coverage report in HTML
-
-### C++
-
-* To
-* be
-* added
 
 ---
 

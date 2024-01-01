@@ -1,4 +1,4 @@
-const twoSum = function (arr, target) {
+const twoSum = function (arr: number[], target: number): number[] {
   arr.sort((a, b) => a - b);
   let i = 0;
   let j = arr.length - 1;

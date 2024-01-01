@@ -1,16 +1,42 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
+    "allowJs": false,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": false,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "module": "ESNext",
-    "isolatedModules": true, // to avoid type name conflicts
+    "isolatedModules": true,
     "sourceMap": false,
     "noImplicitAny": false,
     "noEmit": true,
-    "allowImportingTsExtensions": true
+    "resolveJsonModule": true
+  },
+  "extends": "ts-node/node16/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": false,
+      "allowImportingTsExtensions": true,
+      "skipLibCheck": false,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "sourceMap": false,
+      "noImplicitAny": false,
+      "noEmit": true,
+      "resolveJsonModule": true
+    }
   },
   "exclude": ["node_modules", "**/__tests__", "**/*.test.ts"]
 }
