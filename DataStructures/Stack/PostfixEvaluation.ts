@@ -13,36 +13,33 @@ Input: str = “100 200 + 2 / 5 * 7 +”
 Output: 757
 */
 
-function postFixEvaluation(exp: string) {
-  const stack = new Stack<number>();
-  for (let i = 0; i < exp.length; i++) {
-    const c: string = exp[i];
-    if (!isNaN(parseInt(c))) stack.push(parseInt(c));
-    else {
+function postFixEvaluation(tokens: string | string[]) {
+  const stack: number[] = [];
+
+  for (const token of tokens) {
+    if (!isNaN(parseInt(token))) {
+      stack.push(parseInt(token));
+    } else {
       const val1 = stack.pop()!;
       const val2 = stack.pop()!;
-      if (!val1 && !val2) return "Can't perform postfix evaluation";
-      switch (c) {
+      switch (token) {
         case "+":
-          stack.push(((val2 as number) + val1) as number);
+          stack.push(val2 + val1);
           break;
-
         case "-":
-          stack.push(((val2 as number) - val1) as number);
+          stack.push(val2 - val1);
           break;
-
         case "/":
-          stack.push(((val2 as number) / val1) as number);
+          stack.push(Math.trunc(val2 / val1));
           break;
-
         case "*":
-          stack.push(((val2 as number) * val1) as number);
+          stack.push(val2 * val1);
           break;
       }
     }
   }
 
-  return stack.pop();
+  return stack.pop()!;
 }
 
 // calling the above method

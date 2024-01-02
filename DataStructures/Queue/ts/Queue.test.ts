@@ -4,10 +4,11 @@ describe('Queue', () => {
   let queue;
 
   beforeEach(() => {
-    queue = new Queue();
+    const capacity = 3;
+    queue = new Queue(capacity);
   });
 
-  it('should enqueue and dequeue elements', () => {
+  it('enqueues and dequeues elements', () => {
     queue.enqueue(1);
     queue.enqueue(2);
     queue.enqueue(3);
@@ -18,12 +19,10 @@ describe('Queue', () => {
     expect(queue.dequeue()).toBeUndefined();
   });
 
-  it('should return the length of the queue', () => {
+  it('returns the length of the queue', () => {
     expect(queue.length).toBe(0);
 
     queue.enqueue(1);
-    expect(queue.length).toBe(1);
-
     queue.enqueue(2);
     expect(queue.length).toBe(2);
 
@@ -31,7 +30,7 @@ describe('Queue', () => {
     expect(queue.length).toBe(1);
   });
 
-  it('Should peek at the front element', () => {
+  it('peeks at the front element', () => {
     expect(queue.peek()).toBeUndefined();
 
     queue.enqueue(1);
@@ -41,26 +40,27 @@ describe('Queue', () => {
     expect(queue.peek()).toBe(1);
   });
 
-  it("isEmpty should return true and false when expected", () => {
-    expect(queue.isEmpty).toBe(true);
+  it("isEmpty checks if the queue is empty", () => {
+    expect(queue.isEmpty()).toBeTruthy();
 
     queue.enqueue(1);
-    expect(queue.isEmpty).toBe(false);
-
-    queue.enqueue(2);
-    expect(queue.isEmpty).toBe(false);
+    expect(queue.isEmpty()).toBeFalsy();
   })
 
-  it("isFull should return true and false when expected", () => {
-    expect(queue.isFull(0)).toBe(true);
-    expect(queue.isFull(1)).toBe(false);
-
+  it("isFull checks if the queue is full", () => {
+    expect(queue.isFull()).toBeFalsy();
     queue.enqueue(1);
-    expect(queue.isFull(1)).toBe(true);
-    expect(queue.isFull(2)).toBe(false);
-
     queue.enqueue(2);
-    expect(queue.isFull(2)).toBe(true);
-    expect(queue.isFull(3)).toBe(false);
+    queue.enqueue(3);
+    expect(queue.isFull()).toBeTruthy();
+  })
+
+  it("enqueue does not add items to the queue when capacity is reached", () => {
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.enqueue(3);
+    expect(queue.isFull()).toBeTruthy();
+    expect(queue.enqueue(4)).toBe(null);
+    expect(queue.peek()).toBe(1);
   })
 });

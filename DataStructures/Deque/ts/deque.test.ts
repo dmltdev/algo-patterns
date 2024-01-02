@@ -1,4 +1,4 @@
-import { Deque } from "./Deque.js";
+import { Deque } from "./Deque.ts";
 
 describe("Data Structure: Deque", () => {
   let deque;
