@@ -6,7 +6,7 @@ The slowPtr moves one step at a time, while the fastPtr moves two steps at a tim
 If there is a loop in the linked list, eventually, the fastPtr will catch up to the slowPtr inside the loop.
 */
 
-import LinkedList, { ListNode } from "../DoublyLinkedList";
+import LinkedList, { ListNode } from "../DoublyLinkedList/ts/DoublyLinkedList.ts";
 
 function detectLoop<T>(head: ListNode<T> | null) {
   let slowPtr = head;
