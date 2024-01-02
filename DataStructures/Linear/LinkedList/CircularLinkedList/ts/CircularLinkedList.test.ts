@@ -77,4 +77,15 @@ describe("CircularLinkedList", () => {
     expect(list.getTail()).toBeNull();
     expect(list.getLength()).toBe(0);
   });
+
+  it("empty list is not circular", () => {
+    expect(list.isCircular()).toBeFalsy();
+  })
+  
+  it("linked list is truly circular", () => {
+    list.insertAtHead(1);
+    list.insertAtHead(2);
+    list.insertAtTail(3);
+    expect(list.isCircular()).toBeTruthy();
+  });
 });

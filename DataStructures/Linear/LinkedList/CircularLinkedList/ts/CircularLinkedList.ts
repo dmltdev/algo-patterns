@@ -6,13 +6,11 @@ export class Node<T> {
   public value: T;
   public next: Node<T> | null;
   public prev: Node<T> | null;
-  public viewed: boolean;
 
   constructor(value: T) {
     this.value = value;
     this.prev = null;
     this.next = null;
-    this.viewed = false;
   }
 }
 
@@ -110,5 +108,21 @@ export default class CircularLinkedList<T> {
 
   getLength(): number {
     return this.length;
+  }
+
+  isCircular(): boolean {
+    let slowPtr = this.head;
+    let fastPtr = this.head;
+
+    while (assertNode(fastPtr) && assertNode(fastPtr.next)) {
+      slowPtr = slowPtr!.next;
+      fastPtr = fastPtr.next!.next;
+
+      if (slowPtr === fastPtr) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
