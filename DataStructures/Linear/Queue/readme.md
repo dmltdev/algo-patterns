@@ -20,3 +20,10 @@ Putting items in the queue is called enqueue, And removing items from the queue 
 - When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
 - Handling of interrupts in real-time systems.
 - Call Center phone systems use Queues to hold people calling them in order.
+
+## Types of Queue
+
+- Simple Queue: the item that goes in first is the item that comes out first.
+- Deque: ...
+- Priority Queue: ...
+- Circular Queue: ...
