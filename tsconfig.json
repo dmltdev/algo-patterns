@@ -8,29 +8,16 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
     "allowImportingTsExtensions": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "isolatedModules": true,
+    "esModuleInterop": true,
     "sourceMap": false,
     "noImplicitAny": false,
     "noEmit": true
   },
   "ts-node": {
     "transpileOnly": true,
-    "files": true,
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "NodeNext",
-      "moduleResolution": "NodeNext",
-      "strict": true,
-      "forceConsistentCasingInFileNames": true,
-      "allowJs": false,
-      "allowImportingTsExtensions": true,
-      "skipLibCheck": false,
-      "isolatedModules": true,
-      "sourceMap": false,
-      "noImplicitAny": false,
-      "noEmit": true
-    }
+    "files": true
   },
   "exclude": ["node_modules", "**/__tests__", "**/*.test.ts"]
 }
