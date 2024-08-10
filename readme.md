@@ -19,16 +19,29 @@
   - [Design Patterns](#design-patterns)
   - [Structure Similarities](#structure-similarities)
     - [Adapter - Facade - Proxy](#adapter---facade---proxy)
+    - [Strategy - Factory Method - Visitor](#strategy---factory-method---visitor)
+    - [Builder - State - Bridge - Observer](#builder---state---bridge---observer)
+    - [Composite - Decorator - Chain of responsibility - Interpreter](#composite---decorator---chain-of-responsibility---interpreter)
+    - [Command - Iterator - Mediator - Memento - Prototype](#command---iterator---mediator---memento---prototype)
+    - [Abstract Factory - Template Method - Flyweight - Singleton](#abstract-factory---template-method---flyweight---singleton)
   - [Testing](#testing)
     - [TypeScript](#typescript)
     - [Python](#python)
     - [Golang](#golang)
 
+The purpose of the repository is to write my own implementations of DSA and DP in various languages for learning purposes.
+
+The repository includes tested implementations of data structures, algorithms, and design patterns.
+
 **Status: In Progress.**
 
-The repository contains tested implementations of common data structures, algorithms, and design patterns.
+**DISCLAIMER**: Explanations below are based on numerous resources and I do not claim images and sayings below as my own. Please find the rightful authors here:
 
-Languages: TypeScript, Python, Golang, and C++.
+- [Vince Huston](http://www.vincehuston.org/dp/) | Data and images for design patterns
+- [Programiz](https://www.programiz.com/) | Data for DSA
+- [Refactoring Guru](https://refactoring.guru/) | Data for DSA and DP
+
+**Languages**: TypeScript, Python, Golang, and C++.
 
 ## Three rules of determining Big O
 
@@ -44,7 +57,7 @@ Languages: TypeScript, Python, Golang, and C++.
 
 - Have constant space complexity O(1).
 - Transform input using no auxiliary data structure; however, a small amount of extra storage space is allowed for auxiliary variables. In simple words, the input is overwritten and no extra data structures are required.
-  
+
 **Out-of-place algorithms:**
 
 - Have greater than constant space complexity, e.g.: linear time or quadratic time.
@@ -74,7 +87,7 @@ Non-comparison-type:
 
 - sort elements without directly comparing them, often using properties like digits or counts.
 - can achieve better time complexity, often O(n)O(n) for specific scenarios.
- examples: counting sort, radix sort, bucket sort.
+  examples: counting sort, radix sort, bucket sort.
 
 ## Algorithm Types
 
@@ -130,6 +143,55 @@ Non-comparison-type:
 
 ![Adapter-Facade-Proxy](https://github.com/dmltdev/algo-patterns/blob/main/doc/adapter-facade-proxy.gif "Left-Right symbol = wrapper/wrappee or delegation or 'has a' relationship")
 
+- Adapter: wrap a legacy object that provides an incompatible interface with an object that supports the desired interface
+- Facade: wrap a complicated subsystem with an object that provides a simple interface
+- Proxy: wrap an object with a surrogate object that provides additional functionality
+
+### Strategy - Factory Method - Visitor
+
+![Strategy-Factory Method-Visitor](https://github.com/dmltdev/algo-patterns/blob/main/doc/strategy-factory-visitor.gif "Up-Down symbol = inheritance hierarchy (promote interface to a base class and bury implementation alternatives in derived classes)")
+
+- Strategy: define algorithm interface in a base class and implementations in derived classes
+- Factory Method: define "createInstance" placeholder in the base class, each derived class calls the "new" operator and returns an instance of itself
+- Visitor: define "accept" method in first inheritance hierarchy, define "visit" methods in second hierarchy a.k.a. "double dispatch"
+
+### Builder - State - Bridge - Observer
+
+![Builder - State - Bridge - Observer](https://github.com/dmltdev/algo-patterns/blob/main/doc/builder-state-bridge-observer.gif "Category: a wrapper wraps an inheritance hierarchy")
+
+- Builder: the "reader" delegates to its configured "builder" ... each builder corresponds to a different representation or target
+- State: the FiniteStateMachine delegates to the "current" state object, and that state object can set the "next" state object
+- Bridge: the wrapper models "abstraction" and the wrappee models many possible "implementations" ... the wrapper can use inheritance to support abstraction specialization
+- Observer: the "model" broadcasts to many possible "views", and each "view" can dialog with the "model"
+
+### Composite - Decorator - Chain of responsibility - Interpreter
+
+![Composite - Decorator - Chain of responsibility - Interpreter](https://github.com/dmltdev/algo-patterns/blob/main/doc/composite-decorator-responsibility-interpreter.gif "Category: recursive composition")
+
+- Composite: derived Composites contain one or more base Components, each of which could be a derived Composite
+- Decorator: a Decorator contains a single base Component, which could be a derived ConcreteComponent or another derived Decorator
+- Chain of Responsibility: define "linked list" functionality in the base class and implement "domain" functionality in derived classes
+- Interpreter: map a domain to a language, the language to a recursive grammar, and the grammar to the Composite pattern
+
+### Command - Iterator - Mediator - Memento - Prototype
+
+![Command - Iterator - Mediator - Memento - Prototype](https://github.com/dmltdev/algo-patterns/blob/main/doc/command-iterator-mediator-memento-prototype.gif "Cloud symbol = promote X to 'full object status'")
+
+- Command: encapsulate an object, the method to be invoked, and the parameters to be passed behind the method signature "execute"
+- Iterator: encapsulate the traversal of collection classes behind the interface "first..next..isDone"
+- Mediator: decouple peer objects by encapsulating their "many to many" linkages in an intermediary object
+- Memento: encapsulate the state of an existing object in a new object to implement a "restore" capability
+- Prototype: encapsulate use of the "new" operator behind the method signature "clone" ... clients will delegate to a Prototype object when new instances are required
+
+### Abstract Factory - Template Method - Flyweight - Singleton
+
+![Abstract Factory - Template Method - Flyweight - Singleton](https://github.com/dmltdev/algo-patterns/blob/main/doc/abstractfactory-templatemethod-flyweight-singleton.gif "Category: miscellaneous")
+
+- Abstract Factory: model "platform" (e.g. windowing system, operating system, database) with an inheritance hierarchy, and model each "product" (e.g. widgets, services, data structures) with its own hierarchy. Platform derived classes create and return instances of product derived classes
+- Template Method: define the "outline" of an algorithm in a base class. Common implementation is staged in the base class, peculiar implementation is represented by "place holders" in the base class and then implemented in derived classes
+- Flyweight: when dozens of instances of a class are desired and performance boggs down, externalize object state that is peculiar for each instance, and require the client to pass that state when methods are invoked
+- Singleton: engineer a class to encapsulate a single instance of itself, and "lock out" clients from creating their own instances
+
 ## Testing
 
 ### TypeScript
@@ -137,7 +199,7 @@ Non-comparison-type:
 - Use explicit type annotations that won't conflict with other files, such as TreeNode, DequeNode, ListNode
 - Write tests with Jest in filename.test.ts files
 - Run `pnpm test` to see the coverage report
-  
+
 ### Python
 
 - Ensure that all the packages are installed: `pip install -r requirements.txt`
