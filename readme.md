@@ -17,13 +17,13 @@
     - [Quick Sort](#quick-sort)
   - [Data Structures](#data-structures)
   - [Design Patterns](#design-patterns)
-  - [Structure Similarities](#structure-similarities)
-    - [Adapter - Facade - Proxy](#adapter---facade---proxy)
-    - [Strategy - Factory Method - Visitor](#strategy---factory-method---visitor)
-    - [Builder - State - Bridge - Observer](#builder---state---bridge---observer)
-    - [Composite - Decorator - Chain of responsibility - Interpreter](#composite---decorator---chain-of-responsibility---interpreter)
-    - [Command - Iterator - Mediator - Memento - Prototype](#command---iterator---mediator---memento---prototype)
-    - [Abstract Factory - Template Method - Flyweight - Singleton](#abstract-factory---template-method---flyweight---singleton)
+    - [Structure Similarities](#structure-similarities)
+      - [Adapter - Facade - Proxy](#adapter---facade---proxy)
+      - [Strategy - Factory Method - Visitor](#strategy---factory-method---visitor)
+      - [Builder - State - Bridge - Observer](#builder---state---bridge---observer)
+      - [Composite - Decorator - Chain of responsibility - Interpreter](#composite---decorator---chain-of-responsibility---interpreter)
+      - [Command - Iterator - Mediator - Memento - Prototype](#command---iterator---mediator---memento---prototype)
+      - [Abstract Factory - Template Method - Flyweight - Singleton](#abstract-factory---template-method---flyweight---singleton)
   - [Testing](#testing)
     - [TypeScript](#typescript)
     - [Python](#python)
@@ -137,9 +137,9 @@ Non-comparison-type:
 
 ## Design Patterns
 
-## Structure Similarities
+### Structure Similarities
 
-### Adapter - Facade - Proxy
+#### Adapter - Facade - Proxy
 
 ![Adapter-Facade-Proxy](https://github.com/dmltdev/algo-patterns/blob/main/doc/adapter-facade-proxy.gif "Left-Right symbol = wrapper/wrappee or delegation or 'has a' relationship")
 
@@ -147,7 +147,7 @@ Non-comparison-type:
 - Facade: wrap a complicated subsystem with an object that provides a simple interface
 - Proxy: wrap an object with a surrogate object that provides additional functionality
 
-### Strategy - Factory Method - Visitor
+#### Strategy - Factory Method - Visitor
 
 ![Strategy-Factory Method-Visitor](https://github.com/dmltdev/algo-patterns/blob/main/doc/strategy-factory-visitor.gif "Up-Down symbol = inheritance hierarchy (promote interface to a base class and bury implementation alternatives in derived classes)")
 
@@ -155,7 +155,7 @@ Non-comparison-type:
 - Factory Method: define "createInstance" placeholder in the base class, each derived class calls the "new" operator and returns an instance of itself
 - Visitor: define "accept" method in first inheritance hierarchy, define "visit" methods in second hierarchy a.k.a. "double dispatch"
 
-### Builder - State - Bridge - Observer
+#### Builder - State - Bridge - Observer
 
 ![Builder - State - Bridge - Observer](https://github.com/dmltdev/algo-patterns/blob/main/doc/builder-state-bridge-observer.gif "Category: a wrapper wraps an inheritance hierarchy")
 
@@ -164,7 +164,7 @@ Non-comparison-type:
 - Bridge: the wrapper models "abstraction" and the wrappee models many possible "implementations" ... the wrapper can use inheritance to support abstraction specialization
 - Observer: the "model" broadcasts to many possible "views", and each "view" can dialog with the "model"
 
-### Composite - Decorator - Chain of responsibility - Interpreter
+#### Composite - Decorator - Chain of responsibility - Interpreter
 
 ![Composite - Decorator - Chain of responsibility - Interpreter](https://github.com/dmltdev/algo-patterns/blob/main/doc/composite-decorator-responsibility-interpreter.gif "Category: recursive composition")
 
@@ -173,7 +173,7 @@ Non-comparison-type:
 - Chain of Responsibility: define "linked list" functionality in the base class and implement "domain" functionality in derived classes
 - Interpreter: map a domain to a language, the language to a recursive grammar, and the grammar to the Composite pattern
 
-### Command - Iterator - Mediator - Memento - Prototype
+#### Command - Iterator - Mediator - Memento - Prototype
 
 ![Command - Iterator - Mediator - Memento - Prototype](https://github.com/dmltdev/algo-patterns/blob/main/doc/command-iterator-mediator-memento-prototype.gif "Cloud symbol = promote X to 'full object status'")
 
@@ -183,7 +183,7 @@ Non-comparison-type:
 - Memento: encapsulate the state of an existing object in a new object to implement a "restore" capability
 - Prototype: encapsulate use of the "new" operator behind the method signature "clone" ... clients will delegate to a Prototype object when new instances are required
 
-### Abstract Factory - Template Method - Flyweight - Singleton
+#### Abstract Factory - Template Method - Flyweight - Singleton
 
 ![Abstract Factory - Template Method - Flyweight - Singleton](https://github.com/dmltdev/algo-patterns/blob/main/doc/abstractfactory-templatemethod-flyweight-singleton.gif "Category: miscellaneous")
 
