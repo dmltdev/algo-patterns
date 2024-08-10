@@ -7,14 +7,14 @@
     - [Algorithm stability: Stable \& Unstable](#algorithm-stability-stable--unstable)
     - [Comparison algorithm: comparison-type \& non-comparison-type](#comparison-algorithm-comparison-type--non-comparison-type)
   - [Algorithm Types](#algorithm-types)
-  - [Search Algorithms](#search-algorithms)
-    - [Linear Search](#linear-search)
-    - [Binary Search](#binary-search)
-    - [Exponential Search](#exponential-search)
-  - [Sorting Algorithms](#sorting-algorithms)
-    - [Bubble Sort](#bubble-sort)
-    - [Merge Sort](#merge-sort)
-    - [Quick Sort](#quick-sort)
+    - [Search Algorithms](#search-algorithms)
+      - [Linear Search](#linear-search)
+      - [Binary Search](#binary-search)
+      - [Exponential Search](#exponential-search)
+    - [Sorting Algorithms](#sorting-algorithms)
+      - [Bubble Sort](#bubble-sort)
+      - [Merge Sort](#merge-sort)
+      - [Quick Sort](#quick-sort)
   - [Data Structures](#data-structures)
   - [Design Patterns](#design-patterns)
     - [Structure Similarities](#structure-similarities)
@@ -91,41 +91,41 @@ Non-comparison-type:
 
 ## Algorithm Types
 
-## Search Algorithms
+### Search Algorithms
 
-### Linear Search
+#### Linear Search
 
 - Sequentially checks each element until the target is found.
 - Time complexity: O(n)O(n).
 - Works on unsorted or sorted lists.
 
-### Binary Search
+#### Binary Search
 
 - Divides the list in half to find the target in a sorted list.
 - Time complexity: O(log⁡n)O(logn).
 - Requires the list to be sorted.
 
-### Exponential Search
+#### Exponential Search
 
 - Combines binary search with a preliminary search that quickly narrows down the range.
 - Time complexity: O(log⁡n)O(logn).
 - Efficient for large, sorted lists.
 
-## Sorting Algorithms
+### Sorting Algorithms
 
-### Bubble Sort
+#### Bubble Sort
 
 - Repeatedly swaps adjacent elements if they are in the wrong order.
 - Time complexity: O(n2)O(n2).
 - Simple but inefficient for large lists.
 
-### Merge Sort
+#### Merge Sort
 
 - Divides the list into smaller sublists, sorts them, and then merges them.
 - Time complexity: O(nlog⁡n)O(nlogn).
 - Stable and efficient, good for large lists.
 
-### Quick Sort
+#### Quick Sort
 
 - Picks a pivot element and partitions the list around it, recursively sorting the partitions.
 - Time complexity: O(nlog⁡n)O(nlogn) on average, O(n2)O(n2) in the worst case.
