@@ -128,7 +128,7 @@ Non-comparison-type:
 
 ### Adapter - Facade - Proxy
 
-![Adapter-Facade-Proxy](https://github.com/dmltdev/algo-patterns/tree/main/doc/adapter-facade-proxy.gif "Left-Right symbol = wrapper/wrappee or delegation or 'has a' relationship")
+![Adapter-Facade-Proxy](https://github.com/dmltdev/algo-patterns/blob/main/doc/adapter-facade-proxy.gif "Left-Right symbol = wrapper/wrappee or delegation or 'has a' relationship")
 
 ## Testing
 
