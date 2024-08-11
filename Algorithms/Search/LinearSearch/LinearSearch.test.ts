@@ -1,28 +1,38 @@
 import linearSearch from "./LinearSearch";
 
 //Array with numbers 1-100
-const arr = Array.from(Array(100 + 1).keys()).slice(1); //?
+const arr = Array.from(Array(100 + 1).keys()).slice(1);
+
+function expectLinearSearchResults(arr: number[], cases: [number, number][]) {
+  cases.forEach(([searchValue, expectedIndex]) => {
+    expect(linearSearch(arr, searchValue)).toBe(expectedIndex);
+  });
+}
 
 describe("Exponential Search", () => {
   it("Element found", () => {
-    expect(linearSearch(arr, 1)).toBe(0);
-    expect(linearSearch(arr, 50)).toBe(49);
-    expect(linearSearch(arr, 100)).toBe(99);
+    expectLinearSearchResults(arr, [
+      [1, 0],
+      [50, 49],
+      [100, 99],
+    ]);
   });
 
   it("Element not found", () => {
-    expect(linearSearch(arr, -100)).toBe(-1);
-    expect(linearSearch(arr, -50)).toBe(-1);
-    expect(linearSearch(arr, -1)).toBe(-1);
+    expectLinearSearchResults(arr, [
+      [-100, -1],
+      [-50, -1],
+      [-1, -1],
+    ]);
   });
 
   it("Empty Array", () => {
-    expect(linearSearch([], 10)).toBe(-1);
+    expectLinearSearchResults([], [[10, -1]]);
   });
 
   it("Negative Values", () => {
-    expect(linearSearch([-100, -50, -1], -100)).toBe(0);
-    expect(linearSearch([-100, -50, -1], -50)).toBe(1);
-    expect(linearSearch([-100, -50, -1], -1)).toBe(2);
+    expectLinearSearchResults([-100, -50, -1], [[-100, 0]]);
+    expectLinearSearchResults([-100, -50, -1], [[-50, 1]]);
+    expectLinearSearchResults([-100, -50, -1], [[-1, 2]]);
   });
 });
