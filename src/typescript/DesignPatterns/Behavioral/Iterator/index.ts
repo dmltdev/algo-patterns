@@ -25,3 +25,5 @@ function range(start: number, end: number, step = 1) {
 for (const n of range(0, 100, 5)) {
   console.log(n);
 }
+
+
